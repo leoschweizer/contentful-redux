@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/leoschweizer/contentful-redux#readme",
   "dependencies": {
-    "contentful": "^5.1.0"
+    "camel-case": "^3.0.0",
+    "contentful": "^5.1.0",
+    "pascal-case": "^2.0.1",
+    "reselect": "^3.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -33,11 +36,20 @@
     "xo": "^0.18.2"
   },
   "xo": {
-  	"envs": ["jest"],
-  	"plugins": ["jest"],
+    "envs": [
+      "jest"
+    ],
+    "plugins": [
+      "jest"
+    ],
     "rules": {
-    	"object-curly-spacing": ["error", "always"],
-      "padded-blocks": [0]
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "padded-blocks": [
+        0
+      ]
     }
   }
 }

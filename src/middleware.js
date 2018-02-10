@@ -1,6 +1,21 @@
 const constants = require('./constants');
 
-const middleware = (options = {}) => store => {
+const processContentTypes = (contentTypes, options) => {
+	return contentTypes.map(each => ({
+		...each,
+		fields: each.fields.map(field => ({
+			...field,
+			__meta__: {
+				propertyName: options.propertyName(field)
+			}
+		})),
+		__meta__: {
+			className: options.className(each)
+		}
+	}));
+};
+
+const makeMiddleware = options => store => {
 
 	const client = options.createClient({
 		space: options.space,
@@ -11,7 +26,7 @@ const middleware = (options = {}) => store => {
 
 		const result = next(action);
 
-		if (action.type === constants.SYNC) {
+		if (action.type === constants.SYNC && action.space === options.space) {
 			store.dispatch({ type: constants.SYNC_PENDING });
 			try {
 				const [space, contentTypes, syncResult] = await Promise.all([
@@ -22,13 +37,13 @@ const middleware = (options = {}) => store => {
 				store.dispatch({
 					type: constants.SYNC_FINISHED,
 					space,
-					contentTypes: contentTypes.toPlainObject().items,
+					contentTypes: processContentTypes(contentTypes.toPlainObject().items, options),
 					...syncResult.toPlainObject()
 				});
 			} catch (err) {
 				store.dispatch({
 					type: constants.SYNC_FAILED,
-					error: err
+					error: err.toString()
 				});
 			}
 		}
@@ -40,6 +55,5 @@ const middleware = (options = {}) => store => {
 };
 
 module.exports = {
-	middleware,
-	default: middleware
+	makeMiddleware
 };

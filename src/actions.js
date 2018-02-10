@@ -1,9 +1,18 @@
 const constants = require('./constants');
 
-const sync = () => ({
-	type: constants.SYNC
-});
+const makeActions = options => {
+
+	const sync = () => ({
+		type: constants.SYNC,
+		space: options.space
+	});
+
+	return {
+		sync
+	};
+
+};
 
 module.exports = {
-	sync
+	makeActions
 };
