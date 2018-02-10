@@ -1,6 +1,6 @@
 const createClient = require('contentful');
 
-module.exports = options => store => {
+module.exports = (options = {}) => store => {
 
 	const clientFactory = options.createClient || createClient;
 
@@ -11,7 +11,8 @@ module.exports = options => store => {
 
 	return next => action => {
 		client.foo();
+		store.bar();
 		return next(action);
-	}
+	};
 
 };

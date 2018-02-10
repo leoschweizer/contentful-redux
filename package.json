@@ -5,6 +5,7 @@
   "main": "./distribution/index.js",
   "scripts": {
     "build": "babel src --out-dir distribution",
+    "lint": "xo",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +25,12 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "rules": {
+      "padded-blocks": [0]
+    }
   }
 }
