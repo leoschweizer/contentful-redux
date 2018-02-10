@@ -36,9 +36,8 @@
   	"envs": ["jest"],
   	"plugins": ["jest"],
     "rules": {
-      "padded-blocks": [
-        0
-      ]
+    	"object-curly-spacing": ["error", "always"],
+      "padded-blocks": [0]
     }
   }
 }
