@@ -1,9 +1,9 @@
 const constants = require('./constants');
 
-const fetchData = () => ({
-	type: constants.FETCH_DATA
+const sync = () => ({
+	type: constants.SYNC
 });
 
 module.exports = {
-	fetchData
+	sync
 };

@@ -7,7 +7,7 @@
     "build": "babel src --out-dir distribution",
     "lint": "xo",
     "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,11 +26,17 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "eslint-plugin-jest": "^21.8.0",
+    "jest": "^22.2.2",
     "xo": "^0.18.2"
   },
   "xo": {
+  	"envs": ["jest"],
+  	"plugins": ["jest"],
     "rules": {
-      "padded-blocks": [0]
+      "padded-blocks": [
+        0
+      ]
     }
   }
 }
