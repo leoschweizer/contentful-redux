@@ -16,13 +16,13 @@ const middleware = (options = {}) => store => {
 			try {
 				const [space, contentTypes, syncResult] = await Promise.all([
 					client.getSpace(),
-					client.getContentTypes(),
+					client.getContentTypes({ limit: 1000 }),
 					client.sync({ initial: true, resolveLinks: false })
 				]);
 				store.dispatch({
 					type: constants.SYNC_FINISHED,
 					space,
-					contentTypes: contentTypes.items,
+					contentTypes: contentTypes.toPlainObject().items,
 					...syncResult.toPlainObject()
 				});
 			} catch (err) {
