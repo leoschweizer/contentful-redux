@@ -1,18 +1,34 @@
-const createClient = require('contentful');
+const constants = require('./constants');
 
-module.exports = (options = {}) => store => {
+const middleware = (options = {}) => store => {
 
-	const clientFactory = options.createClient || createClient;
-
-	const client = clientFactory({
+	const client = options.createClient({
 		space: options.space,
-		accessKey: options.accessKey
+		accessToken: options.accessToken
 	});
 
-	return next => action => {
-		client.foo();
-		store.bar();
+	return next => async action => {
+
+		if (action.type === constants.SYNC) {
+			try {
+				const [space, contentTypes, syncResult] = await Promise.all([
+					client.getSpace(),
+					client.getContentTypes(),
+					client.sync({ initial: true, resolveLinks: false })
+				]);
+				console.log(space, contentTypes, syncResult)
+			} catch (err) {
+				console.log(err);
+			}
+		}
+
 		return next(action);
+
 	};
 
+};
+
+module.exports = {
+	middleware,
+	default: middleware
 };

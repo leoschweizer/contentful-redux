@@ -1,6 +1,6 @@
 
 module.exports = {
-	actions: require('./actions'),
-	reducer: require('./reducer'),
-	middleware: require('./middleware')
+	ContentfulActions: require('./actions'),
+	reducer: require('./reducer').reducer,
+	middleware: require('./middleware').middleware
 };
