@@ -9,6 +9,8 @@ const middleware = (options = {}) => store => {
 
 	return next => async action => {
 
+		const result = next(action);
+
 		if (action.type === constants.SYNC) {
 			store.dispatch({ type: constants.SYNC_PENDING });
 			try {
@@ -17,13 +19,21 @@ const middleware = (options = {}) => store => {
 					client.getContentTypes(),
 					client.sync({ initial: true, resolveLinks: false })
 				]);
-				console.log(space, contentTypes, syncResult);
+				store.dispatch({
+					type: constants.SYNC_FINISHED,
+					space,
+					contentTypes: contentTypes.items,
+					...syncResult.toPlainObject()
+				});
 			} catch (err) {
-				console.log(err);
+				store.dispatch({
+					type: constants.SYNC_FAILED,
+					error: err
+				});
 			}
 		}
 
-		return next(action);
+		return result;
 
 	};
 
