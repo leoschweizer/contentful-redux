@@ -4,7 +4,8 @@
   "description": "",
   "main": "./distribution/index.js",
   "scripts": {
-    "build": "babel src --out-dir distribution",
+    "build": "babel src --out-dir distribution --source-maps inline",
+    "build:watch": "npm run build -- --watch",
     "lint": "xo",
     "lint:fix": "xo --fix",
     "prepublish": "npm run build",
