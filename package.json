@@ -6,6 +6,7 @@
   "scripts": {
     "build": "babel src --out-dir distribution",
     "lint": "xo",
+    "lint:fix": "xo --fix",
     "prepublish": "npm run build",
     "test": "jest"
   },
