@@ -1,0 +1,29 @@
+{
+  "name": "contentful-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/distribution/index.js",
+  "scripts": {
+    "build": "babel src --out-dir distribution",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoschweizer/contentful-redux.git"
+  },
+  "author": "Leo Schweizer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leoschweizer/contentful-redux/issues"
+  },
+  "homepage": "https://github.com/leoschweizer/contentful-redux#readme",
+  "dependencies": {
+    "contentful": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
