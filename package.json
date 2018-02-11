@@ -1,7 +1,8 @@
 {
   "name": "contentful-redux",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Contentful sync API implementation for redux/reselect",
+  "keywords": ["contentful", "sync", "react", "redux", "reselect"],
   "main": "./distribution/index.js",
   "scripts": {
     "build": "babel src --ignore '**/__tests__/**' --out-dir distribution --source-maps inline",
