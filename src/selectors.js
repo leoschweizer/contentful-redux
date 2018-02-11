@@ -2,7 +2,7 @@ const { createSelector } = require('reselect');
 const { ContentType, Asset, Entry } = require('./model');
 const { resolveLinksMutating } = require('./utils/resolveLinks');
 
-const mapifyModels = (modelArray) => {
+const mapifyModels = modelArray => {
 	return modelArray.reduce((result, model) => {
 		return {
 			...result,
@@ -71,7 +71,7 @@ const makeSelectors = ({ stateSelector, localeSelector }) => {
 				const localizedFields = Object.keys(rawAsset.fields).reduce((result, key) => {
 					return {
 						...result,
-						[key]: rawAsset.fields[key][locale] || rawAsset.fields[key][defaultLocale.code],
+						[key]: rawAsset.fields[key][locale] || rawAsset.fields[key][defaultLocale.code]
 					};
 				}, {});
 				return {

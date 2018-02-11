@@ -13,8 +13,7 @@ const merge = (entities, newEntities, deletedEntities) => {
 		.filter(each => newEntities.every(newEntity => each.sys.id !== newEntity.sys.id))
 		.filter(each => deletedEntities.every(deletedEntity => each.sys.id !== deletedEntity.sys.id))
 		.concat(newEntities);
-}
-
+};
 
 const reducer = (state = initialState, action) => {
 

@@ -47,7 +47,8 @@
       ],
       "padded-blocks": [
         0
-      ]
+      ],
+      "unicorn/filename-case": ["error", { "case": "camelCase" }]
     }
   }
 }

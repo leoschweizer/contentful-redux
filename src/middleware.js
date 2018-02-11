@@ -19,7 +19,7 @@ const makeMiddleware = options => store => {
 				const [space, contentTypes, syncResult] = await Promise.all([
 					client.getSpace(),
 					client.getContentTypes({ limit: 1000 }),
-					client.sync({ initial: !!!state.nextSyncToken, nextSyncToken: state.nextSyncToken, resolveLinks: false })
+					client.sync({ initial: Boolean(!state.nextSyncToken), nextSyncToken: state.nextSyncToken, resolveLinks: false })
 				]);
 				store.dispatch({
 					type: constants.SYNC_FINISHED,
