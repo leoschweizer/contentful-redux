@@ -11,8 +11,8 @@ const makeMiddleware = options => store => {
 
 		const result = next(action);
 
-		if (action.type === constants.SYNC && action.space === options.space) {
-			store.dispatch({ type: constants.SYNC_PENDING });
+		if (action.type === constants.SYNC && action.spaceId === options.space) {
+			store.dispatch({ type: constants.SYNC_PENDING, spaceId: options.space });
 			try {
 				const [space, contentTypes, syncResult] = await Promise.all([
 					client.getSpace(),
@@ -21,6 +21,7 @@ const makeMiddleware = options => store => {
 				]);
 				store.dispatch({
 					type: constants.SYNC_FINISHED,
+					spaceId: options.space,
 					space,
 					contentTypes: contentTypes.toPlainObject().items,
 					...syncResult.toPlainObject()
@@ -28,6 +29,7 @@ const makeMiddleware = options => store => {
 			} catch (err) {
 				store.dispatch({
 					type: constants.SYNC_FAILED,
+					spaceId: options.space,
 					error: err.toString()
 				});
 			}

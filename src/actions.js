@@ -4,7 +4,7 @@ const makeActions = options => {
 
 	const sync = () => ({
 		type: constants.SYNC,
-		space: options.space
+		spaceId: options.space
 	});
 
 	return {
