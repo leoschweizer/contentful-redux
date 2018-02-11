@@ -10,10 +10,16 @@ install:
 script:
 - npm run lint
 - npm run test:ci
-deploy:
-  provider: npm
-  email: leonhard.schweizer@gmail.com
-  api_key:
-    secure: hDJZATsrsPPiz/6LZ/GjSqobT5IjqpXwbJq9DfMj855ToZhXTaav46aYaeqoTPwt53gfrD12RLbCXRyrmM4YXRXumqDcf0PE8+0beCNCaQIApnNeLj8Mk8cXtssEoissx+RscWSIxXNPQKS+glo1o2WV05mUknCapuCmYj+mqR6/SFN/Kfmyj7pz2DnRcK4AYZA0r23X90yoTWeKFriSAnm+9PI7lI5zGQfdykHhCF7dmBDVnb67V3FG9Q+GLeDT/j1eMJO0qAdNaQsqX82zX5IH+z9URON9vO4EoSv/qk/0S3kUWYTi+DQ8+JN0ClfBphBzclkRrgeC2/fP9hVchOGSCnvuFqykChFq7BCFeCLa1E3oLo3cyiIvw/rGDrWt8OkCB8+mVd7cOeS0NuOk61289AS4MXBvH/at8yhy6qZ2eFGaLdUcdmEmoeUDB8BnVNVNKFbrX+0dsOPRmSyeIZvuzN0d0VmS72OofAF1fFWzqWqgrIdDFLUFxHpnuz9Xlr9u2V45XmXTwuqAafEnL0x8aTD4LQfsjnyQemny0O3mbM6pTLC4bcF+pgo1SsBakvvGiW7m8Yp9c1jGKmJnoCJB2YUv8EJqyzyFASXF8Azu2ERSbZztSbD0a4s2JRd5LTZIIJnYhMoR0sHh+tQg0SbdFWKVF66/cyC+LYYtyeE=
-  on:
-    tags: true
+jobs:
+  include:
+    - stage: npm release
+      node_js: "lts/*"
+      script: echo "Deploying to npm ..."
+      deploy:
+        provider: npm
+        skip_cleanup: true
+        email: leonhard.schweizer@gmail.com
+        api_key:
+          secure: hDJZATsrsPPiz/6LZ/GjSqobT5IjqpXwbJq9DfMj855ToZhXTaav46aYaeqoTPwt53gfrD12RLbCXRyrmM4YXRXumqDcf0PE8+0beCNCaQIApnNeLj8Mk8cXtssEoissx+RscWSIxXNPQKS+glo1o2WV05mUknCapuCmYj+mqR6/SFN/Kfmyj7pz2DnRcK4AYZA0r23X90yoTWeKFriSAnm+9PI7lI5zGQfdykHhCF7dmBDVnb67V3FG9Q+GLeDT/j1eMJO0qAdNaQsqX82zX5IH+z9URON9vO4EoSv/qk/0S3kUWYTi+DQ8+JN0ClfBphBzclkRrgeC2/fP9hVchOGSCnvuFqykChFq7BCFeCLa1E3oLo3cyiIvw/rGDrWt8OkCB8+mVd7cOeS0NuOk61289AS4MXBvH/at8yhy6qZ2eFGaLdUcdmEmoeUDB8BnVNVNKFbrX+0dsOPRmSyeIZvuzN0d0VmS72OofAF1fFWzqWqgrIdDFLUFxHpnuz9Xlr9u2V45XmXTwuqAafEnL0x8aTD4LQfsjnyQemny0O3mbM6pTLC4bcF+pgo1SsBakvvGiW7m8Yp9c1jGKmJnoCJB2YUv8EJqyzyFASXF8Azu2ERSbZztSbD0a4s2JRd5LTZIIJnYhMoR0sHh+tQg0SbdFWKVF66/cyC+LYYtyeE=
+        on:
+          tags: true
