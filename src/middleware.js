@@ -1,20 +1,5 @@
 const constants = require('./constants');
 
-const processContentTypes = (contentTypes, options) => {
-	return contentTypes.map(each => ({
-		...each,
-		fields: each.fields.map(field => ({
-			...field,
-			__meta__: {
-				propertyName: options.propertyName(field)
-			}
-		})),
-		__meta__: {
-			className: options.className(each)
-		}
-	}));
-};
-
 const makeMiddleware = options => store => {
 
 	const client = options.createClient({
@@ -37,7 +22,7 @@ const makeMiddleware = options => store => {
 				store.dispatch({
 					type: constants.SYNC_FINISHED,
 					space,
-					contentTypes: processContentTypes(contentTypes.toPlainObject().items, options),
+					contentTypes: contentTypes.toPlainObject().items,
 					...syncResult.toPlainObject()
 				});
 			} catch (err) {
