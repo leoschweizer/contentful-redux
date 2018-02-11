@@ -34,6 +34,11 @@
     "jest": "^22.2.2",
     "xo": "^0.18.2"
   },
+  "jest": {
+  	"collectCoverageFrom": [
+  		"src/**/*.js"
+  	]
+  },
   "xo": {
     "envs": [
       "jest"
