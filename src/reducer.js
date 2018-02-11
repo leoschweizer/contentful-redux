@@ -1,6 +1,7 @@
 const constants = require('./constants');
 
 const initialState = {
+	space: {},
 	contentTypes: [],
 	assets: [],
 	entries: [],
@@ -16,7 +17,10 @@ const reducer = (state = initialState, action) => {
 		case constants.SYNC_FINISHED:
 			return {
 				...state,
-				contentTypes: action.contentTypes
+				space: action.space,
+				contentTypes: action.contentTypes,
+				assets: action.assets,
+				entries: action.entries
 			};
 
 		default:

@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/leoschweizer/contentful-redux#readme",
   "dependencies": {
-    "camel-case": "^3.0.0",
     "contentful": "^5.1.0",
     "pascal-case": "^2.0.1",
     "reselect": "^3.0.1"

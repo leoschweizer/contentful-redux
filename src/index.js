@@ -1,4 +1,3 @@
-const camelCase = require('camel-case');
 const pascalCase = require('pascal-case');
 const { makeActions } = require('./actions');
 const { makeSelectors } = require('./selectors');
@@ -7,7 +6,8 @@ const { reducer } = require('./reducer');
 
 const defaultOptions = {
 	className: contentType => pascalCase(contentType.name),
-	propertyName: field => camelCase(field.name)
+	propertyName: field => field.id,
+	locale: state => null
 };
 
 module.exports = (userOptions = {}) => {
