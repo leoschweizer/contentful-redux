@@ -7,7 +7,7 @@ const { reducer } = require('./reducer');
 const defaultOptions = {
 	className: contentType => pascalCase(contentType.name),
 	propertyName: field => field.id,
-	locale: state => null
+	localeSelector: () => null
 };
 
 module.exports = (userOptions = {}) => {

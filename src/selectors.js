@@ -10,7 +10,7 @@ const mapifyModels = (modelArray, idExtractor = model => model.sys.id) => {
 	}, {});
 };
 
-const isLink = (object) => {
+const isLink = object => {
 	return object && object.sys && object.sys.type === 'Link';
 };
 
@@ -29,8 +29,8 @@ const walkMutate = (input, predicate, mutator) => {
 	}
 
 	if (input && typeof input === 'object') {
-		for (var key in input) {
-			if (input.hasOwnProperty(key)) {
+		for (const key in input) {
+			if (Object.prototype.hasOwnProperty.call(input, key)) {
 				input[key] = walkMutate(input[key], predicate, mutator);
 			}
 		}
@@ -42,15 +42,15 @@ const walkMutate = (input, predicate, mutator) => {
 };
 
 const resolveLinksMutating = (entries, lookupTable) => {
-	walkMutate(entries, isLink, (link) => (getLink(lookupTable, link) || link));
+	walkMutate(entries, isLink, link => (getLink(lookupTable, link) || link));
 	return entries || [];
 };
 
-const makeSelectors = ({ contentful, locale }) => {
+const makeSelectors = ({ stateSelector, localeSelector }) => {
 
 	const space = createSelector(
-		contentful,
-		contentful => contentful.space
+		stateSelector,
+		state => state.space
 	);
 
 	const locales = createSelector(
@@ -64,7 +64,7 @@ const makeSelectors = ({ contentful, locale }) => {
 	);
 
 	const preferredLocaleCode = createSelector(
-		locale, defaultLocale,
+		localeSelector, defaultLocale,
 		(locale, defaultLocale) => {
 			if (locale) {
 				return locale;
@@ -77,27 +77,27 @@ const makeSelectors = ({ contentful, locale }) => {
 	);
 
 	const rawContentTypes = createSelector(
-		contentful,
-		contentful => contentful.contentTypes
+		stateSelector,
+		state => state.contentTypes
 	);
 
 	const rawAssets = createSelector(
-		contentful,
-		contentful => contentful.assets
+		stateSelector,
+		state => state.assets
 	);
 
 	const rawEntries = createSelector(
-		contentful,
-		contentful => contentful.entries
+		stateSelector,
+		state => state.entries
 	);
 
 	const contentTypes = createSelector(
 		rawContentTypes,
-		(rawContentTypes) => mapifyModels(rawContentTypes)
+		rawContentTypes => mapifyModels(rawContentTypes)
 	);
 
 	const flatAssets = createSelector(
-		rawAssets, locale, defaultLocale,
+		rawAssets, localeSelector, defaultLocale,
 		(rawAssets, locale, defaultLocale) => {
 			return rawAssets.map(rawAsset => {
 				return Object.keys(rawAsset.fields).reduce((previous, current) => {
@@ -141,14 +141,14 @@ const makeSelectors = ({ contentful, locale }) => {
 	);
 
 	const entries = createSelector(
-		localizedEntries, rawAssets, contentTypes,
-		(localizedEntries, rawAssets, contentTypes) => {
+		localizedEntries, rawAssets,
+		(localizedEntries, rawAssets) => {
 			const deepClonedEntries = JSON.parse(JSON.stringify(localizedEntries)).map(each => {
 				return new Entry(each);
 			});
 			const entryMap = mapifyModels(deepClonedEntries, each => each.id);
 			const assetMap = mapifyModels(rawAssets);
-			return resolveLinksMutating(deepClonedEntries, {...entryMap, ...assetMap});
+			return resolveLinksMutating(deepClonedEntries, { ...entryMap, ...assetMap });
 		}
 	);
 
