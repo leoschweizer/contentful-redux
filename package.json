@@ -2,7 +2,13 @@
   "name": "contentful-redux",
   "version": "0.0.1",
   "description": "Contentful sync API implementation for redux/reselect",
-  "keywords": ["contentful", "sync", "react", "redux", "reselect"],
+  "keywords": [
+    "contentful",
+    "sync",
+    "react",
+    "redux",
+    "reselect"
+  ],
   "main": "./distribution/index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src --ignore '**/__tests__/**' --out-dir distribution --source-maps inline",
@@ -24,23 +30,25 @@
   },
   "homepage": "https://github.com/leoschweizer/contentful-redux#readme",
   "dependencies": {
+    "babel-runtime": "^6.26.0",
     "reselect": "^3.0.1"
   },
   "peerDependencies": {
-  	"contentful": "5.x"
+    "contentful": "5.x"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "eslint-plugin-jest": "^21.8.0",
     "jest": "^22.2.2",
     "xo": "^0.18.2"
   },
   "jest": {
-  	"collectCoverageFrom": [
-  		"src/**/*.js"
-  	]
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
   },
   "xo": {
     "envs": [
@@ -57,7 +65,12 @@
       "padded-blocks": [
         0
       ],
-      "unicorn/filename-case": ["error", { "case": "camelCase" }]
+      "unicorn/filename-case": [
+        "error",
+        {
+          "case": "camelCase"
+        }
+      ]
     }
   }
 }
