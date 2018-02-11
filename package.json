@@ -5,7 +5,7 @@
   "keywords": ["contentful", "sync", "react", "redux", "reselect"],
   "main": "./distribution/index.js",
   "scripts": {
-    "build": "babel src --ignore '**/__tests__/**' --out-dir distribution --source-maps inline",
+    "build": "./node_modules/.bin/babel src --ignore '**/__tests__/**' --out-dir distribution --source-maps inline",
     "build:watch": "npm run build -- --watch",
     "lint": "xo",
     "lint:fix": "xo --fix",
