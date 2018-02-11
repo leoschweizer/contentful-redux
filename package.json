@@ -8,7 +8,7 @@
     "build:watch": "npm run build -- --watch",
     "lint": "xo",
     "lint:fix": "xo --fix",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "test": "jest"
   },
   "repository": {
