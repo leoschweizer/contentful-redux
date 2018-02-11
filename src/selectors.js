@@ -1,12 +1,12 @@
 const { createSelector } = require('reselect');
-const { Asset, Entry } = require('./model');
+const { ContentType, Asset, Entry } = require('./model');
 const { resolveLinksMutating } = require('./utils/resolveLinks');
 
-const mapifyModels = (modelArray, idExtractor = model => model.sys.id) => {
+const mapifyModels = (modelArray) => {
 	return modelArray.reduce((result, model) => {
 		return {
 			...result,
-			[idExtractor(model)]: model
+			[model.id]: model
 		};
 	}, {});
 };
@@ -58,7 +58,10 @@ const makeSelectors = ({ stateSelector, localeSelector }) => {
 
 	const contentTypes = createSelector(
 		rawContentTypes,
-		rawContentTypes => mapifyModels(rawContentTypes)
+		rawContentTypes => rawContentTypes.map(ContentType.newWithData).reduce((result, contentType) => ({
+			...result,
+			[contentType.id]: contentType
+		}), {})
 	);
 
 	const localizedAssets = createSelector(
@@ -113,12 +116,12 @@ const makeSelectors = ({ stateSelector, localeSelector }) => {
 	);
 
 	const entries = createSelector(
-		localizedEntries, assets,
-		(localizedEntries, assets) => {
+		localizedEntries, assets, contentTypes,
+		(localizedEntries, assets, contentTypes) => {
 			const deepClonedEntries = JSON.parse(JSON.stringify(localizedEntries)).map(Entry.newWithData);
-			const entryMap = mapifyModels(deepClonedEntries, each => each.id);
-			const assetMap = mapifyModels(assets, each => each.id);
-			return resolveLinksMutating(deepClonedEntries, { ...entryMap, ...assetMap });
+			const entryMap = mapifyModels(deepClonedEntries);
+			const assetMap = mapifyModels(assets);
+			return resolveLinksMutating(deepClonedEntries, { ...entryMap, ...assetMap, ...contentTypes });
 		}
 	);
 
