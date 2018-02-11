@@ -5,10 +5,16 @@ const initialState = {
 	contentTypes: [],
 	assets: [],
 	entries: [],
-	isFetchingData: false,
-	didFetchData: false,
-	error: null
+	nextSyncToken: null
 };
+
+const merge = (entities, newEntities, deletedEntities) => {
+	return entities
+		.filter(each => newEntities.every(newEntity => each.sys.id !== newEntity.sys.id))
+		.filter(each => deletedEntities.every(deletedEntity => each.sys.id !== deletedEntity.sys.id))
+		.concat(newEntities);
+}
+
 
 const reducer = (state = initialState, action) => {
 
@@ -19,8 +25,9 @@ const reducer = (state = initialState, action) => {
 				...state,
 				space: action.space,
 				contentTypes: action.contentTypes,
-				assets: action.assets,
-				entries: action.entries
+				assets: merge(state.assets, action.assets, action.deletedAssets),
+				entries: merge(state.entries, action.entries, action.deletedEntries),
+				nextSyncToken: action.nextSyncToken
 			};
 
 		default:

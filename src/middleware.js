@@ -9,6 +9,8 @@ const makeMiddleware = options => store => {
 
 	return next => async action => {
 
+		const state = options.stateSelector(store.getState());
+
 		const result = next(action);
 
 		if (action.type === constants.SYNC && action.spaceId === options.space) {
@@ -17,7 +19,7 @@ const makeMiddleware = options => store => {
 				const [space, contentTypes, syncResult] = await Promise.all([
 					client.getSpace(),
 					client.getContentTypes({ limit: 1000 }),
-					client.sync({ initial: true, resolveLinks: false })
+					client.sync({ initial: !!!state.nextSyncToken, nextSyncToken: state.nextSyncToken, resolveLinks: false })
 				]);
 				store.dispatch({
 					type: constants.SYNC_FINISHED,
