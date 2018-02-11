@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`sync action creator 1`] = `
+exports[`action creators sync action creator 1`] = `
 Object {
+  "spaceId": "SPACE_ID",
   "type": "Contentful/SYNC",
 }
 `;

@@ -1,5 +1,13 @@
-const actions = require('../actions');
+const { makeActions } = require('../actions');
 
-test('sync action creator', () => {
-	expect(actions.sync()).toMatchSnapshot();
+describe('action creators', () => {
+
+	const actions = makeActions({
+		space: 'SPACE_ID'
+	});
+
+	test('sync action creator', () => {
+		expect(actions.sync()).toMatchSnapshot();
+	});
+
 });
