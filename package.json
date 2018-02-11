@@ -23,8 +23,10 @@
   },
   "homepage": "https://github.com/leoschweizer/contentful-redux#readme",
   "dependencies": {
-    "contentful": "^5.1.0",
     "reselect": "^3.0.1"
+  },
+  "peerDependencies": {
+  	"contentful": "5.x"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
