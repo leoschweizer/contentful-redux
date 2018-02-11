@@ -5,9 +5,11 @@ node_js:
 cache:
   directories:
   - node_modules
+install:
+- npm install -g codecov
 script:
 - npm run lint
-- npm run test
+- npm run test:ci
 deploy:
   provider: npm
   email: leonhard.schweizer@gmail.com
