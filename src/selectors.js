@@ -1,5 +1,6 @@
 const { createSelector } = require('reselect');
-const { Entry } = require('./model');
+const { Asset, Entry } = require('./model');
+const { resolveLinksMutating } = require('./utils/resolveLinks');
 
 const mapifyModels = (modelArray, idExtractor = model => model.sys.id) => {
 	return modelArray.reduce((result, model) => {
@@ -8,42 +9,6 @@ const mapifyModels = (modelArray, idExtractor = model => model.sys.id) => {
 			[idExtractor(model)]: model
 		};
 	}, {});
-};
-
-const isLink = object => {
-	return object && object.sys && object.sys.type === 'Link';
-};
-
-const getLink = (lookupTable, link) => {
-	const candidate = lookupTable[link.sys.id];
-	if (!candidate || candidate.sys.type !== link.sys.linkType) {
-		return null;
-	}
-	return candidate;
-};
-
-const walkMutate = (input, predicate, mutator) => {
-
-	if (predicate(input)) {
-		return mutator(input);
-	}
-
-	if (input && typeof input === 'object') {
-		for (const key in input) {
-			if (Object.prototype.hasOwnProperty.call(input, key)) {
-				input[key] = walkMutate(input[key], predicate, mutator);
-			}
-		}
-		return input;
-	}
-
-	return input;
-
-};
-
-const resolveLinksMutating = (entries, lookupTable) => {
-	walkMutate(entries, isLink, link => (getLink(lookupTable, link) || link));
-	return entries || [];
 };
 
 const makeSelectors = ({ stateSelector, localeSelector }) => {
@@ -96,19 +61,21 @@ const makeSelectors = ({ stateSelector, localeSelector }) => {
 		rawContentTypes => mapifyModels(rawContentTypes)
 	);
 
-	const flatAssets = createSelector(
+	const localizedAssets = createSelector(
 		rawAssets, localeSelector, defaultLocale,
 		(rawAssets, locale, defaultLocale) => {
 			return rawAssets.map(rawAsset => {
-				return Object.keys(rawAsset.fields).reduce((previous, current) => {
+				const localizedFields = Object.keys(rawAsset.fields).reduce((result, key) => {
 					return {
-						[current]: rawAsset.fields[current][locale] || rawAsset.fields[current][defaultLocale],
-						...previous
+						...result,
+						[key]: rawAsset.fields[key][locale] || rawAsset.fields[key][defaultLocale.code],
 					};
-				}, {
-					sys: rawAsset.sys,
-					fields: rawAsset.fields
-				});
+				}, {});
+				return {
+					localizedFields,
+					fields: rawAsset.fields,
+					sys: rawAsset.sys
+				};
 			});
 		}
 	);
@@ -140,14 +107,17 @@ const makeSelectors = ({ stateSelector, localeSelector }) => {
 		}
 	);
 
+	const assets = createSelector(
+		localizedAssets,
+		localizedAssets => localizedAssets.map(Asset.newWithData)
+	);
+
 	const entries = createSelector(
-		localizedEntries, rawAssets,
-		(localizedEntries, rawAssets) => {
-			const deepClonedEntries = JSON.parse(JSON.stringify(localizedEntries)).map(each => {
-				return new Entry(each);
-			});
+		localizedEntries, assets,
+		(localizedEntries, assets) => {
+			const deepClonedEntries = JSON.parse(JSON.stringify(localizedEntries)).map(Entry.newWithData);
 			const entryMap = mapifyModels(deepClonedEntries, each => each.id);
-			const assetMap = mapifyModels(rawAssets);
+			const assetMap = mapifyModels(assets, each => each.id);
 			return resolveLinksMutating(deepClonedEntries, { ...entryMap, ...assetMap });
 		}
 	);
@@ -157,8 +127,7 @@ const makeSelectors = ({ stateSelector, localeSelector }) => {
 		locales,
 		defaultLocale,
 		contentTypes,
-		localizedEntries,
-		flatAssets,
+		assets,
 		entries
 	};
 
