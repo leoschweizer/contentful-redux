@@ -1,12 +1,9 @@
-const pascalCase = require('pascal-case');
 const { makeActions } = require('./actions');
 const { makeSelectors } = require('./selectors');
 const { makeMiddleware } = require('./middleware');
 const { reducer } = require('./reducer');
 
 const defaultOptions = {
-	className: contentType => pascalCase(contentType.name),
-	propertyName: field => field.id,
 	localeSelector: () => null
 };
 
