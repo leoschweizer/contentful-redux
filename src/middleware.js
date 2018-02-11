@@ -37,11 +37,11 @@ const makeMiddleware = options => store => {
 
 	const relevantActions = [constants.SYNC];
 
-	return next => action => {
+	return next => async action => {
 		const state = options.stateSelector(store.getState());
 		const result = next(action);
 		if (relevantActions.includes(action.type) && action.spaceId === options.space) {
-			handleContentfulAction(client, action, state, store.dispatch, options);
+			return handleContentfulAction(client, action, state, store.dispatch, options);
 		}
 		return result;
 	};

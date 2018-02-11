@@ -1,7 +1,4 @@
 {
 	"presets": ["env"],
-	"plugins": ["transform-object-rest-spread"],
-	"ignore": [
-		"**/__tests__/**"
-	]
+	"plugins": ["transform-object-rest-spread"]
 }
