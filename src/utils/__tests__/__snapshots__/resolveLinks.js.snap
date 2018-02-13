@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`contentful link resolval should resolve links to assets 1`] = `
+Array [
+  Object {
+    "assetField": Object {
+      "myProperty": "Hello World",
+      "sys": Object {
+        "id": "a1",
+        "type": "Asset",
+      },
+    },
+    "sys": Object {
+      "id": "e2",
+      "type": "Entry",
+    },
+  },
+]
+`;
+
+exports[`contentful link resolval should resolve links to entries 1`] = `
+Array [
+  Object {
+    "entryField": Object {
+      "assetField": Object {
+        "sys": Object {
+          "id": "a1",
+          "linkType": "Asset",
+          "type": "Link",
+        },
+      },
+      "sys": Object {
+        "id": "e2",
+        "type": "Entry",
+      },
+    },
+    "sys": Object {
+      "id": "e1",
+      "type": "Entry",
+    },
+  },
+]
+`;
