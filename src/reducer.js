@@ -5,6 +5,7 @@ const initialState = {
 	contentTypes: [],
 	assets: [],
 	entries: [],
+	lastSync: null,
 	nextSyncToken: null
 };
 
@@ -26,6 +27,13 @@ const reducer = (state = initialState, action) => {
 				contentTypes: action.contentTypes,
 				assets: merge(state.assets, action.assets, action.deletedAssets),
 				entries: merge(state.entries, action.entries, action.deletedEntries),
+				lastSync: {
+					addedEntries: action.entries,
+					deletedEntries: action.deletedEntries,
+					addedAssets: action.assets,
+					deletedAssets: action.deletedAssets,
+					date: action.date.toUTCString()
+				},
 				nextSyncToken: action.nextSyncToken
 			};
 

@@ -17,7 +17,8 @@ describe('reducer', () => {
 			assets: [makeEntity('a1'), makeEntity('a2')],
 			deletedEntries: [],
 			deletedAssets: [],
-			nextSyncToken: 'SYNC_TOKEN'
+			nextSyncToken: 'SYNC_TOKEN',
+			date: new Date('Wed, 14 Jun 2017 07:00:00 GMT')
 		};
 		const action = { type: constants.SYNC_FINISHED, ...syncResult };
 		expect(reducer(initialState, action)).toEqual(expect.objectContaining({
@@ -42,7 +43,8 @@ describe('reducer', () => {
 			assets: [makeEntity('a3')],
 			deletedEntries: [makeEntity('e1')],
 			deletedAssets: [makeEntity('a2')],
-			nextSyncToken: 'SYNC_TOKEN'
+			nextSyncToken: 'SYNC_TOKEN',
+			date: new Date('Wed, 14 Jun 2017 07:00:00 GMT')
 		};
 		const action = { type: constants.SYNC_FINISHED, ...syncResult };
 		expect(reducer(state, action)).toEqual(expect.objectContaining({

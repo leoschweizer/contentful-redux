@@ -15,6 +15,7 @@ const handleContentfulAction = async (client, action, state, dispatch, options) 
 				spaceId: options.space,
 				space,
 				contentTypes: contentTypes.toPlainObject().items,
+				date: new Date(),
 				...syncResult.toPlainObject()
 			});
 		} catch (err) {
