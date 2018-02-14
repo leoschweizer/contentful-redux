@@ -43,7 +43,7 @@
     "babel-preset-env": "^1.6.1",
     "eslint-plugin-jest": "^21.8.0",
     "jest": "^22.2.2",
-    "xo": "^0.18.2"
+    "xo": "^0.20.0"
   },
   "jest": {
     "collectCoverageFrom": [
