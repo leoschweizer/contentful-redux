@@ -13,6 +13,9 @@
   "scripts": {
     "build": "./node_modules/.bin/babel src --ignore '**/__tests__/**' --out-dir distribution --source-maps inline",
     "build:watch": "npm run build -- --watch",
+    "changelog:major": "changelog -M",
+    "changelog:minor": "changelog -m",
+    "changelog:patch": "changelog -p",
     "lint": "xo",
     "lint:fix": "xo --fix",
     "prepublishOnly": "npm run build",
@@ -42,6 +45,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "eslint-plugin-jest": "^21.8.0",
+    "generate-changelog": "^1.7.0",
     "jest": "^22.2.2",
     "xo": "^0.20.1"
   },
@@ -66,11 +70,11 @@
         0
       ],
       "quotes": [
-      	"error",
-      	"single",
-      	{
-      		"avoidEscape": true
-      	}
+        "error",
+        "single",
+        {
+          "avoidEscape": true
+        }
       ],
       "unicorn/filename-case": [
         "error",
