@@ -6,6 +6,7 @@ const initialState = {
 	assets: [],
 	entries: [],
 	lastSync: null,
+	isSyncing: false,
 	nextSyncToken: null
 };
 
@@ -20,6 +21,12 @@ const reducer = (state = initialState, action) => {
 
 	switch (action.type) {
 
+		case constants.SYNC:
+			return {
+				...state,
+				isSyncing: true
+			};
+
 		case constants.SYNC_FINISHED:
 			return {
 				...state,
@@ -28,13 +35,26 @@ const reducer = (state = initialState, action) => {
 				assets: merge(state.assets, action.assets, action.deletedAssets),
 				entries: merge(state.entries, action.entries, action.deletedEntries),
 				lastSync: {
+					didSucceed: true,
 					addedEntries: action.entries,
 					deletedEntries: action.deletedEntries,
 					addedAssets: action.assets,
 					deletedAssets: action.deletedAssets,
 					date: action.date.toUTCString()
 				},
+				isSyncing: false,
 				nextSyncToken: action.nextSyncToken
+			};
+
+		case constants.SYNC_FAILED:
+			return {
+				...state,
+				lastSync: {
+					didSucceed: false,
+					date: action.date.toUTCString(),
+					error: action.error
+				},
+				isSyncing: false
 			};
 
 		default:

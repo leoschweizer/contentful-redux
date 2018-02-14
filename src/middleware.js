@@ -22,6 +22,7 @@ const handleContentfulAction = async (client, action, state, dispatch, options) 
 			dispatch({
 				type: constants.SYNC_FAILED,
 				spaceId: options.space,
+				date: new Date(),
 				error: err.toString()
 			});
 		}
