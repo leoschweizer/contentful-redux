@@ -53,4 +53,24 @@ describe('reducer', () => {
 		}));
 	});
 
+	it('should handle a sync failure correctly', () => {
+		const state = {
+			...initialState,
+			entries: [makeEntity('e1')],
+			assets: [makeEntity('a1')]
+		};
+		const action = {
+			type: constants.SYNC_FAILED,
+			error: "This didn't work",
+			date: new Date('Wed, 14 Jun 2017 07:00:00 GMT')
+		};
+		expect(reducer(state, action)).toEqual(expect.objectContaining({
+			lastSync: expect.objectContaining({
+				didSucceed: false,
+				error: action.error,
+				date: action.date.toUTCString()
+			})
+		}));
+	});
+
 });
