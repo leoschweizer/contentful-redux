@@ -65,6 +65,13 @@
       "padded-blocks": [
         0
       ],
+      "quotes": [
+      	"error",
+      	"single",
+      	{
+      		"avoidEscape": true
+      	}
+      ],
       "unicorn/filename-case": [
         "error",
         {
