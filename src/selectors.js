@@ -63,10 +63,15 @@ const makeSelectors = ({ stateSelector, localeSelector }) => {
 
 	const lastSync = createSelector(
 		rawLastSync,
-		rawLastSync => ({
-			...rawLastSync,
-			date: new Date(rawLastSync.date)
-		})
+		rawLastSync => {
+			if (!rawLastSync) {
+				return null;
+			}
+			return {
+				...rawLastSync,
+				date: new Date(rawLastSync.date)
+			};
+		)
 	);
 
 	const isSyncing = createSelector(
