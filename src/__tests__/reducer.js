@@ -9,6 +9,13 @@ describe('reducer', () => {
 		expect(reducer(undefined, {})).toEqual(initialState);
 	});
 
+	it('should switch to syncing state when starting a sync', () => {
+		const action = { type: constants.SYNC, spaceId: 'SPACE_ID' };
+		expect(reducer(initialState, action)).toEqual(expect.objectContaining({
+			isSyncing: true
+		}));
+	});
+
 	it('should handle an initial sync correctly ', () => {
 		const syncResult = {
 			space: { id: 'SPACE_ID' },
