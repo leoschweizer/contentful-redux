@@ -57,7 +57,8 @@ describe('reducer', () => {
 		const state = {
 			...initialState,
 			entries: [makeEntity('e1')],
-			assets: [makeEntity('a1')]
+			assets: [makeEntity('a1')],
+			isSyncing: true
 		};
 		const action = {
 			type: constants.SYNC_FAILED,
@@ -69,7 +70,8 @@ describe('reducer', () => {
 				didSucceed: false,
 				error: action.error,
 				date: action.date.toUTCString()
-			})
+			}),
+			isSyncing: false
 		}));
 	});
 
