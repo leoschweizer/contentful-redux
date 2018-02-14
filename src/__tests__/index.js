@@ -1,3 +1,4 @@
+// eslint-disable-next-line unicorn/import-index
 const contentfulRedux = require('../');
 
 describe('the module', () => {
