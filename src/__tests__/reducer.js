@@ -9,6 +9,13 @@ describe('reducer', () => {
 		expect(reducer(undefined, {})).toEqual(initialState);
 	});
 
+	it('should switch to syncing state when starting a sync', () => {
+		const action = { type: constants.SYNC, spaceId: 'SPACE_ID' };
+		expect(reducer(initialState, action)).toEqual(expect.objectContaining({
+			isSyncing: true
+		}));
+	});
+
 	it('should handle an initial sync correctly ', () => {
 		const syncResult = {
 			space: { id: 'SPACE_ID' },
@@ -50,6 +57,28 @@ describe('reducer', () => {
 		expect(reducer(state, action)).toEqual(expect.objectContaining({
 			entries: [makeEntity('e2'), makeEntity('e3')],
 			assets: [makeEntity('a1'), makeEntity('a3')]
+		}));
+	});
+
+	it('should handle a sync failure correctly', () => {
+		const state = {
+			...initialState,
+			entries: [makeEntity('e1')],
+			assets: [makeEntity('a1')],
+			isSyncing: true
+		};
+		const action = {
+			type: constants.SYNC_FAILED,
+			error: "This didn't work",
+			date: new Date('Wed, 14 Jun 2017 07:00:00 GMT')
+		};
+		expect(reducer(state, action)).toEqual(expect.objectContaining({
+			lastSync: expect.objectContaining({
+				didSucceed: false,
+				error: action.error,
+				date: action.date.toUTCString()
+			}),
+			isSyncing: false
 		}));
 	});
 

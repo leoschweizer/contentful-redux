@@ -61,9 +61,22 @@ const makeSelectors = ({ stateSelector, localeSelector }) => {
 		state => state.lastSync
 	);
 
-	const lastSyncDate = createSelector(
+	const lastSync = createSelector(
 		rawLastSync,
-		rawLastSync => rawLastSync ? new Date(rawLastSync.date) : null
+		rawLastSync => {
+			if (!rawLastSync) {
+				return null;
+			}
+			return {
+				...rawLastSync,
+				date: new Date(rawLastSync.date)
+			};
+		}
+	);
+
+	const isSyncing = createSelector(
+		stateSelector,
+		state => state.isSyncing
 	);
 
 	const contentTypes = createSelector(
@@ -139,7 +152,8 @@ const makeSelectors = ({ stateSelector, localeSelector }) => {
 		space,
 		locales,
 		defaultLocale,
-		lastSyncDate,
+		lastSync,
+		isSyncing,
 		contentTypes,
 		assets,
 		entries
