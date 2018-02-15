@@ -62,12 +62,10 @@ export const myModelEntities = createSelector(
     selectors.entries, selectors.contentTypes,
     (entries, contentTypes) => entries.filter(each => each.__contentType__ === contentTypes.myModel)
 );
+```
 
 5. Dispatch a sync action whenever you want:
 ```javascript
 import { actions } from './contentful';
 dispatch(actions.sync());
-```
-
-
 ```
