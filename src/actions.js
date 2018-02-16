@@ -2,9 +2,9 @@ const constants = require('./constants');
 
 const makeActions = options => {
 
-	const sync = () => ({
+	const sync = (spaceId = options.space) => ({
 		type: constants.SYNC,
-		spaceId: options.space
+		spaceId
 	});
 
 	return {
