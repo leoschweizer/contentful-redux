@@ -32,10 +32,13 @@ const handleContentfulAction = async (client, action, state, dispatch, options) 
 
 const makeMiddleware = options => store => {
 
-	const client = options.createClient({
+	const clientParams = {
+		...(options.clientParams || {}),
 		space: options.space,
 		accessToken: options.accessToken
-	});
+	};
+
+	const client = options.createClient(clientParams);
 
 	const relevantActions = [constants.SYNC];
 
