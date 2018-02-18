@@ -52,6 +52,9 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js"
+    ],
+    "testPathIgnorePatterns": [
+      "__fixtures__"
     ]
   },
   "xo": {

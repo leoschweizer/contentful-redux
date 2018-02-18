@@ -1,0 +1,2480 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selectors assets selector 1`] = `
+Array [
+  Asset {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:21.098Z",
+      "id": "2czUZ3VWIc68cyOoyGY4MW",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Asset",
+      "updatedAt": "2018-02-18T14:04:21.098Z",
+    },
+    "file": Object {
+      "contentType": "image/jpeg",
+      "details": Object {
+        "image": Object {
+          "height": 3720,
+          "width": 5580,
+        },
+        "size": 9508880,
+      },
+      "fileName": "lUUnN7VGSoWZ3noefeH7_Baker Beach-12.jpg",
+      "url": "//images.contentful.com/2fcnblq1yq14/2czUZ3VWIc68cyOoyGY4MW/bf8e90962701acda5f785ee00663cefd/lUUnN7VGSoWZ3noefeH7_Baker_Beach-12.jpg",
+    },
+    "title": "Golden Gate Bridge",
+  },
+  Asset {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:20.883Z",
+      "id": "26PCF5jzziyeiessOOY0o0",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Asset",
+      "updatedAt": "2018-02-18T14:04:20.883Z",
+    },
+    "file": Object {
+      "contentType": "image/jpeg",
+      "details": Object {
+        "image": Object {
+          "height": 3456,
+          "width": 5184,
+        },
+        "size": 8797338,
+      },
+      "fileName": "2MwGKhLETRSQoHP9UWE4_IMG_1348-3.jpg",
+      "url": "//images.contentful.com/2fcnblq1yq14/26PCF5jzziyeiessOOY0o0/bf8e90962701acda5f785ee00663cefd/2MwGKhLETRSQoHP9UWE4_IMG_1348-3.jpg",
+    },
+    "title": "The Flower",
+  },
+  Asset {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:20.337Z",
+      "id": "geptFDHuzQa8oA2Ywmiew",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Asset",
+      "updatedAt": "2018-02-18T14:04:20.337Z",
+    },
+    "file": Object {
+      "contentType": "image/jpeg",
+      "details": Object {
+        "image": Object {
+          "height": 3264,
+          "width": 4912,
+        },
+        "size": 8254379,
+      },
+      "fileName": "3CoEETpvQYO8x60lnZSA_rue.jpg",
+      "url": "//images.contentful.com/2fcnblq1yq14/geptFDHuzQa8oA2Ywmiew/bf8e90962701acda5f785ee00663cefd/3CoEETpvQYO8x60lnZSA_rue.jpg",
+    },
+    "title": "City Street",
+  },
+  Asset {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:20.151Z",
+      "id": "3nCIlsuVKwQysuMcKGuUA4",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Asset",
+      "updatedAt": "2018-02-18T14:04:20.151Z",
+    },
+    "file": Object {
+      "contentType": "image/jpeg",
+      "details": Object {
+        "image": Object {
+          "height": 3264,
+          "width": 4896,
+        },
+        "size": 1871426,
+      },
+      "fileName": "tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg",
+      "url": "//images.contentful.com/2fcnblq1yq14/3nCIlsuVKwQysuMcKGuUA4/bf8e90962701acda5f785ee00663cefd/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg",
+    },
+    "title": "The world on a digital screen",
+  },
+  Asset {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:20.140Z",
+      "id": "6y0psij2o02YIwGScEo4kS",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Asset",
+      "updatedAt": "2018-02-18T14:04:20.140Z",
+    },
+    "file": Object {
+      "contentType": "image/jpeg",
+      "details": Object {
+        "image": Object {
+          "height": 1673,
+          "width": 2509,
+        },
+        "size": 465358,
+      },
+      "fileName": "photo-1421986527537-888d998adb74.jpeg",
+      "url": "//images.contentful.com/2fcnblq1yq14/6y0psij2o02YIwGScEo4kS/bf8e90962701acda5f785ee00663cefd/photo-1421986527537-888d998adb74.jpeg",
+    },
+    "title": "Celebration",
+  },
+  Asset {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:20.132Z",
+      "id": "149UafeyfcGSoOmESmmYSA",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Asset",
+      "updatedAt": "2018-02-18T14:04:20.132Z",
+    },
+    "description": "Profile pic",
+    "file": Object {
+      "contentType": "image/png",
+      "details": Object {
+        "image": Object {
+          "height": 128,
+          "width": 128,
+        },
+        "size": 12940,
+      },
+      "fileName": "FI01.png",
+      "url": "//images.contentful.com/2fcnblq1yq14/149UafeyfcGSoOmESmmYSA/bf8e90962701acda5f785ee00663cefd/FI01.png",
+    },
+    "title": "Janine",
+  },
+  Asset {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:20.111Z",
+      "id": "1zY02V76cUsM6yWycWqyk6",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Asset",
+      "updatedAt": "2018-02-18T14:04:20.111Z",
+    },
+    "file": Object {
+      "contentType": "image/jpeg",
+      "details": Object {
+        "image": Object {
+          "height": 3456,
+          "width": 5184,
+        },
+        "size": 4328734,
+      },
+      "fileName": "bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg",
+      "url": "//images.contentful.com/2fcnblq1yq14/1zY02V76cUsM6yWycWqyk6/bf8e90962701acda5f785ee00663cefd/bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg",
+    },
+    "title": "Air Baloon",
+  },
+  Asset {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:20.110Z",
+      "id": "5DGRkcoj9mAgwkgGyKMuwe",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Asset",
+      "updatedAt": "2018-02-18T14:04:20.110Z",
+    },
+    "file": Object {
+      "contentType": "image/jpeg",
+      "details": Object {
+        "image": Object {
+          "height": 2720,
+          "width": 4080,
+        },
+        "size": 2076159,
+      },
+      "fileName": "EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg",
+      "url": "//images.contentful.com/2fcnblq1yq14/5DGRkcoj9mAgwkgGyKMuwe/bf8e90962701acda5f785ee00663cefd/EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg",
+    },
+    "title": "Pie in the sky",
+  },
+]
+`;
+
+exports[`selectors contentTypes selector 1`] = `
+Object {
+  "1xYw5JsIecuGE68mmGMg20": ContentType {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:13.481Z",
+      "id": "1xYw5JsIecuGE68mmGMg20",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "ContentType",
+      "updatedAt": "2018-02-18T14:04:13.481Z",
+    },
+    "description": null,
+    "displayField": "title",
+    "fields": Array [
+      Object {
+        "disabled": false,
+        "id": "title",
+        "localized": false,
+        "name": "Title",
+        "omitted": false,
+        "required": true,
+        "type": "Symbol",
+      },
+      Object {
+        "disabled": false,
+        "id": "photo",
+        "linkType": "Asset",
+        "localized": false,
+        "name": "Photo",
+        "omitted": false,
+        "required": false,
+        "type": "Link",
+      },
+      Object {
+        "disabled": false,
+        "id": "imageCaption",
+        "localized": false,
+        "name": "Image caption",
+        "omitted": false,
+        "required": false,
+        "type": "Text",
+      },
+      Object {
+        "disabled": false,
+        "id": "imageCredits",
+        "localized": false,
+        "name": "Image credits",
+        "omitted": false,
+        "required": false,
+        "type": "Text",
+      },
+    ],
+    "name": "Image",
+  },
+  "38nK0gXXIccQ2IEosyAg6C": ContentType {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:13.629Z",
+      "id": "38nK0gXXIccQ2IEosyAg6C",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "ContentType",
+      "updatedAt": "2018-02-18T14:04:13.629Z",
+    },
+    "description": null,
+    "displayField": "name",
+    "fields": Array [
+      Object {
+        "disabled": false,
+        "id": "name",
+        "localized": false,
+        "name": "Name",
+        "omitted": false,
+        "required": false,
+        "type": "Symbol",
+      },
+      Object {
+        "disabled": false,
+        "id": "twitterHandle",
+        "localized": false,
+        "name": "Twitter handle",
+        "omitted": false,
+        "required": false,
+        "type": "Symbol",
+      },
+      Object {
+        "disabled": false,
+        "id": "profilePhoto",
+        "linkType": "Asset",
+        "localized": false,
+        "name": "Profile photo",
+        "omitted": false,
+        "required": false,
+        "type": "Link",
+      },
+      Object {
+        "disabled": false,
+        "id": "biography",
+        "localized": false,
+        "name": "Biography",
+        "omitted": false,
+        "required": false,
+        "type": "Text",
+      },
+      Object {
+        "disabled": false,
+        "id": "createdEntries",
+        "items": Object {
+          "linkType": "Entry",
+          "type": "Link",
+          "validations": Array [
+            Object {
+              "linkContentType": Array [
+                "1xYw5JsIecuGE68mmGMg20",
+              ],
+            },
+          ],
+        },
+        "localized": false,
+        "name": "Created entries",
+        "omitted": false,
+        "required": false,
+        "type": "Array",
+      },
+    ],
+    "name": "Author",
+  },
+  "7leLzv8hW06amGmke86y8G": ContentType {
+    "__meta__": Object {
+      "createdAt": "2018-02-18T14:04:14.153Z",
+      "id": "7leLzv8hW06amGmke86y8G",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "ContentType",
+      "updatedAt": "2018-02-18T14:04:14.153Z",
+    },
+    "description": null,
+    "displayField": "title",
+    "fields": Array [
+      Object {
+        "disabled": false,
+        "id": "title",
+        "localized": false,
+        "name": "Title",
+        "omitted": false,
+        "required": true,
+        "type": "Text",
+      },
+      Object {
+        "disabled": false,
+        "id": "slug",
+        "localized": false,
+        "name": "Slug",
+        "omitted": false,
+        "required": false,
+        "type": "Symbol",
+      },
+      Object {
+        "disabled": false,
+        "id": "author",
+        "linkType": "Entry",
+        "localized": false,
+        "name": "Author",
+        "omitted": false,
+        "required": true,
+        "type": "Link",
+      },
+      Object {
+        "disabled": false,
+        "id": "coverImage",
+        "linkType": "Asset",
+        "localized": false,
+        "name": "Cover Image",
+        "omitted": false,
+        "required": false,
+        "type": "Link",
+      },
+      Object {
+        "disabled": false,
+        "id": "description",
+        "localized": false,
+        "name": "Description",
+        "omitted": false,
+        "required": false,
+        "type": "Text",
+      },
+      Object {
+        "disabled": false,
+        "id": "images",
+        "items": Object {
+          "linkType": "Entry",
+          "type": "Link",
+          "validations": Array [
+            Object {
+              "linkContentType": Array [
+                "1xYw5JsIecuGE68mmGMg20",
+              ],
+            },
+          ],
+        },
+        "localized": false,
+        "name": "Images",
+        "omitted": false,
+        "required": false,
+        "type": "Array",
+      },
+      Object {
+        "disabled": false,
+        "id": "tags",
+        "items": Object {
+          "type": "Symbol",
+          "validations": Array [],
+        },
+        "localized": false,
+        "name": "Tags",
+        "omitted": false,
+        "required": false,
+        "type": "Array",
+      },
+      Object {
+        "disabled": false,
+        "id": "date",
+        "localized": false,
+        "name": "Date",
+        "omitted": false,
+        "required": false,
+        "type": "Date",
+      },
+      Object {
+        "disabled": true,
+        "id": "location",
+        "localized": false,
+        "name": "Location",
+        "omitted": false,
+        "required": false,
+        "type": "Location",
+      },
+    ],
+    "name": "Photo Gallery",
+  },
+}
+`;
+
+exports[`selectors defaultLocale selector 1`] = `
+Object {
+  "code": "en-US",
+  "default": true,
+  "fallbackCode": null,
+  "name": "English (United States)",
+}
+`;
+
+exports[`selectors entries selector 1`] = `
+Array [
+  Entry {
+    "__meta__": Object {
+      "contentType": ContentType {
+        "__meta__": Object {
+          "createdAt": "2018-02-18T14:04:13.481Z",
+          "id": "1xYw5JsIecuGE68mmGMg20",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "ContentType",
+          "updatedAt": "2018-02-18T14:04:13.481Z",
+        },
+        "description": null,
+        "displayField": "title",
+        "fields": Array [
+          Object {
+            "disabled": false,
+            "id": "title",
+            "localized": false,
+            "name": "Title",
+            "omitted": false,
+            "required": true,
+            "type": "Symbol",
+          },
+          Object {
+            "disabled": false,
+            "id": "photo",
+            "linkType": "Asset",
+            "localized": false,
+            "name": "Photo",
+            "omitted": false,
+            "required": false,
+            "type": "Link",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCaption",
+            "localized": false,
+            "name": "Image caption",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCredits",
+            "localized": false,
+            "name": "Image credits",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+        ],
+        "name": "Image",
+      },
+      "createdAt": "2018-02-18T14:04:19.350Z",
+      "id": "2MtVnLk3wIiAgOC6OG6qS4",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Entry",
+      "updatedAt": "2018-02-18T14:04:19.350Z",
+    },
+    "imageCaption": "The bridge, as seen on a cloudy day",
+    "imageCredits": "Chris Brignola // http://www.avelamedia.com/",
+    "photo": Asset {
+      "__meta__": Object {
+        "createdAt": "2018-02-18T14:04:21.098Z",
+        "id": "2czUZ3VWIc68cyOoyGY4MW",
+        "revision": 1,
+        "space": Object {
+          "sys": Object {
+            "id": "2fcnblq1yq14",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Asset",
+        "updatedAt": "2018-02-18T14:04:21.098Z",
+      },
+      "file": Object {
+        "contentType": "image/jpeg",
+        "details": Object {
+          "image": Object {
+            "height": 3720,
+            "width": 5580,
+          },
+          "size": 9508880,
+        },
+        "fileName": "lUUnN7VGSoWZ3noefeH7_Baker Beach-12.jpg",
+        "url": "//images.contentful.com/2fcnblq1yq14/2czUZ3VWIc68cyOoyGY4MW/bf8e90962701acda5f785ee00663cefd/lUUnN7VGSoWZ3noefeH7_Baker_Beach-12.jpg",
+      },
+      "title": "Golden Gate Bridge",
+    },
+    "title": "The Golden Gate Bridge",
+  },
+  Entry {
+    "__meta__": Object {
+      "contentType": ContentType {
+        "__meta__": Object {
+          "createdAt": "2018-02-18T14:04:13.481Z",
+          "id": "1xYw5JsIecuGE68mmGMg20",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "ContentType",
+          "updatedAt": "2018-02-18T14:04:13.481Z",
+        },
+        "description": null,
+        "displayField": "title",
+        "fields": Array [
+          Object {
+            "disabled": false,
+            "id": "title",
+            "localized": false,
+            "name": "Title",
+            "omitted": false,
+            "required": true,
+            "type": "Symbol",
+          },
+          Object {
+            "disabled": false,
+            "id": "photo",
+            "linkType": "Asset",
+            "localized": false,
+            "name": "Photo",
+            "omitted": false,
+            "required": false,
+            "type": "Link",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCaption",
+            "localized": false,
+            "name": "Image caption",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCredits",
+            "localized": false,
+            "name": "Image credits",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+        ],
+        "name": "Image",
+      },
+      "createdAt": "2018-02-18T14:04:19.303Z",
+      "id": "2YhtjbebgscIwO2keYEa4O",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Entry",
+      "updatedAt": "2018-02-18T14:04:19.303Z",
+    },
+    "imageCaption": "Up in the air",
+    "imageCredits": "Austin Ban // http://austinban.com/",
+    "photo": Asset {
+      "__meta__": Object {
+        "createdAt": "2018-02-18T14:04:20.111Z",
+        "id": "1zY02V76cUsM6yWycWqyk6",
+        "revision": 1,
+        "space": Object {
+          "sys": Object {
+            "id": "2fcnblq1yq14",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Asset",
+        "updatedAt": "2018-02-18T14:04:20.111Z",
+      },
+      "file": Object {
+        "contentType": "image/jpeg",
+        "details": Object {
+          "image": Object {
+            "height": 3456,
+            "width": 5184,
+          },
+          "size": 4328734,
+        },
+        "fileName": "bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg",
+        "url": "//images.contentful.com/2fcnblq1yq14/1zY02V76cUsM6yWycWqyk6/bf8e90962701acda5f785ee00663cefd/bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg",
+      },
+      "title": "Air Baloon",
+    },
+    "title": "Air Baloon",
+  },
+  Entry {
+    "__meta__": Object {
+      "contentType": ContentType {
+        "__meta__": Object {
+          "createdAt": "2018-02-18T14:04:13.481Z",
+          "id": "1xYw5JsIecuGE68mmGMg20",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "ContentType",
+          "updatedAt": "2018-02-18T14:04:13.481Z",
+        },
+        "description": null,
+        "displayField": "title",
+        "fields": Array [
+          Object {
+            "disabled": false,
+            "id": "title",
+            "localized": false,
+            "name": "Title",
+            "omitted": false,
+            "required": true,
+            "type": "Symbol",
+          },
+          Object {
+            "disabled": false,
+            "id": "photo",
+            "linkType": "Asset",
+            "localized": false,
+            "name": "Photo",
+            "omitted": false,
+            "required": false,
+            "type": "Link",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCaption",
+            "localized": false,
+            "name": "Image caption",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCredits",
+            "localized": false,
+            "name": "Image credits",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+        ],
+        "name": "Image",
+      },
+      "createdAt": "2018-02-18T14:04:19.282Z",
+      "id": "3eL4DUKKdyqGIQm2M6SaCe",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Entry",
+      "updatedAt": "2018-02-18T14:04:19.282Z",
+    },
+    "imageCaption": "Right in your backyard",
+    "imageCredits": "John French // http://johnmfrench.tumblr.com/",
+    "photo": Asset {
+      "__meta__": Object {
+        "createdAt": "2018-02-18T14:04:20.883Z",
+        "id": "26PCF5jzziyeiessOOY0o0",
+        "revision": 1,
+        "space": Object {
+          "sys": Object {
+            "id": "2fcnblq1yq14",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Asset",
+        "updatedAt": "2018-02-18T14:04:20.883Z",
+      },
+      "file": Object {
+        "contentType": "image/jpeg",
+        "details": Object {
+          "image": Object {
+            "height": 3456,
+            "width": 5184,
+          },
+          "size": 8797338,
+        },
+        "fileName": "2MwGKhLETRSQoHP9UWE4_IMG_1348-3.jpg",
+        "url": "//images.contentful.com/2fcnblq1yq14/26PCF5jzziyeiessOOY0o0/bf8e90962701acda5f785ee00663cefd/2MwGKhLETRSQoHP9UWE4_IMG_1348-3.jpg",
+      },
+      "title": "The Flower",
+    },
+    "title": "The Flower",
+  },
+  Entry {
+    "__meta__": Object {
+      "contentType": ContentType {
+        "__meta__": Object {
+          "createdAt": "2018-02-18T14:04:13.481Z",
+          "id": "1xYw5JsIecuGE68mmGMg20",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "ContentType",
+          "updatedAt": "2018-02-18T14:04:13.481Z",
+        },
+        "description": null,
+        "displayField": "title",
+        "fields": Array [
+          Object {
+            "disabled": false,
+            "id": "title",
+            "localized": false,
+            "name": "Title",
+            "omitted": false,
+            "required": true,
+            "type": "Symbol",
+          },
+          Object {
+            "disabled": false,
+            "id": "photo",
+            "linkType": "Asset",
+            "localized": false,
+            "name": "Photo",
+            "omitted": false,
+            "required": false,
+            "type": "Link",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCaption",
+            "localized": false,
+            "name": "Image caption",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCredits",
+            "localized": false,
+            "name": "Image credits",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+        ],
+        "name": "Image",
+      },
+      "createdAt": "2018-02-18T14:04:19.127Z",
+      "id": "4MA2xHUeLeKaAs2K4Kqiog",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Entry",
+      "updatedAt": "2018-02-18T14:04:19.127Z",
+    },
+    "imageCaption": "Taken in San Sebastian",
+    "imageCredits": "Oscar Nillson // http://oscr.se/",
+    "photo": Asset {
+      "__meta__": Object {
+        "createdAt": "2018-02-18T14:04:20.337Z",
+        "id": "geptFDHuzQa8oA2Ywmiew",
+        "revision": 1,
+        "space": Object {
+          "sys": Object {
+            "id": "2fcnblq1yq14",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Asset",
+        "updatedAt": "2018-02-18T14:04:20.337Z",
+      },
+      "file": Object {
+        "contentType": "image/jpeg",
+        "details": Object {
+          "image": Object {
+            "height": 3264,
+            "width": 4912,
+          },
+          "size": 8254379,
+        },
+        "fileName": "3CoEETpvQYO8x60lnZSA_rue.jpg",
+        "url": "//images.contentful.com/2fcnblq1yq14/geptFDHuzQa8oA2Ywmiew/bf8e90962701acda5f785ee00663cefd/3CoEETpvQYO8x60lnZSA_rue.jpg",
+      },
+      "title": "City Street",
+    },
+    "title": "City Street",
+  },
+  Entry {
+    "__meta__": Object {
+      "contentType": ContentType {
+        "__meta__": Object {
+          "createdAt": "2018-02-18T14:04:13.629Z",
+          "id": "38nK0gXXIccQ2IEosyAg6C",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "ContentType",
+          "updatedAt": "2018-02-18T14:04:13.629Z",
+        },
+        "description": null,
+        "displayField": "name",
+        "fields": Array [
+          Object {
+            "disabled": false,
+            "id": "name",
+            "localized": false,
+            "name": "Name",
+            "omitted": false,
+            "required": false,
+            "type": "Symbol",
+          },
+          Object {
+            "disabled": false,
+            "id": "twitterHandle",
+            "localized": false,
+            "name": "Twitter handle",
+            "omitted": false,
+            "required": false,
+            "type": "Symbol",
+          },
+          Object {
+            "disabled": false,
+            "id": "profilePhoto",
+            "linkType": "Asset",
+            "localized": false,
+            "name": "Profile photo",
+            "omitted": false,
+            "required": false,
+            "type": "Link",
+          },
+          Object {
+            "disabled": false,
+            "id": "biography",
+            "localized": false,
+            "name": "Biography",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+          Object {
+            "disabled": false,
+            "id": "createdEntries",
+            "items": Object {
+              "linkType": "Entry",
+              "type": "Link",
+              "validations": Array [
+                Object {
+                  "linkContentType": Array [
+                    "1xYw5JsIecuGE68mmGMg20",
+                  ],
+                },
+              ],
+            },
+            "localized": false,
+            "name": "Created entries",
+            "omitted": false,
+            "required": false,
+            "type": "Array",
+          },
+        ],
+        "name": "Author",
+      },
+      "createdAt": "2018-02-18T14:04:19.089Z",
+      "id": "4DyrC6MPp6Ws8UmQEQIGUc",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Entry",
+      "updatedAt": "2018-02-18T14:04:19.089Z",
+    },
+    "biography": "Janine is our communications manager. Coming from the South of Germany via London, she enjoys the newest electronica, Japanese candy and literary discussions about the choices of tragic heroes.",
+    "createdEntries": null,
+    "name": "Janine McKay",
+    "profilePhoto": Asset {
+      "__meta__": Object {
+        "createdAt": "2018-02-18T14:04:20.132Z",
+        "id": "149UafeyfcGSoOmESmmYSA",
+        "revision": 1,
+        "space": Object {
+          "sys": Object {
+            "id": "2fcnblq1yq14",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Asset",
+        "updatedAt": "2018-02-18T14:04:20.132Z",
+      },
+      "description": "Profile pic",
+      "file": Object {
+        "contentType": "image/png",
+        "details": Object {
+          "image": Object {
+            "height": 128,
+            "width": 128,
+          },
+          "size": 12940,
+        },
+        "fileName": "FI01.png",
+        "url": "//images.contentful.com/2fcnblq1yq14/149UafeyfcGSoOmESmmYSA/bf8e90962701acda5f785ee00663cefd/FI01.png",
+      },
+      "title": "Janine",
+    },
+    "twitterHandle": "@contentful",
+  },
+  Entry {
+    "__meta__": Object {
+      "contentType": ContentType {
+        "__meta__": Object {
+          "createdAt": "2018-02-18T14:04:13.481Z",
+          "id": "1xYw5JsIecuGE68mmGMg20",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "ContentType",
+          "updatedAt": "2018-02-18T14:04:13.481Z",
+        },
+        "description": null,
+        "displayField": "title",
+        "fields": Array [
+          Object {
+            "disabled": false,
+            "id": "title",
+            "localized": false,
+            "name": "Title",
+            "omitted": false,
+            "required": true,
+            "type": "Symbol",
+          },
+          Object {
+            "disabled": false,
+            "id": "photo",
+            "linkType": "Asset",
+            "localized": false,
+            "name": "Photo",
+            "omitted": false,
+            "required": false,
+            "type": "Link",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCaption",
+            "localized": false,
+            "name": "Image caption",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCredits",
+            "localized": false,
+            "name": "Image credits",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+        ],
+        "name": "Image",
+      },
+      "createdAt": "2018-02-18T14:04:18.646Z",
+      "id": "67rvVwLG3mMsucCsaKgaMi",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Entry",
+      "updatedAt": "2018-02-18T14:04:18.646Z",
+    },
+    "imageCaption": "From the personal archive",
+    "imageCredits": "Jay Wennington // http://jaywennington.tumblr.com/",
+    "photo": Asset {
+      "__meta__": Object {
+        "createdAt": "2018-02-18T14:04:20.151Z",
+        "id": "3nCIlsuVKwQysuMcKGuUA4",
+        "revision": 1,
+        "space": Object {
+          "sys": Object {
+            "id": "2fcnblq1yq14",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Asset",
+        "updatedAt": "2018-02-18T14:04:20.151Z",
+      },
+      "file": Object {
+        "contentType": "image/jpeg",
+        "details": Object {
+          "image": Object {
+            "height": 3264,
+            "width": 4896,
+          },
+          "size": 1871426,
+        },
+        "fileName": "tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg",
+        "url": "//images.contentful.com/2fcnblq1yq14/3nCIlsuVKwQysuMcKGuUA4/bf8e90962701acda5f785ee00663cefd/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg",
+      },
+      "title": "The world on a digital screen",
+    },
+    "title": "The world on a digital screen",
+  },
+  Entry {
+    "__meta__": Object {
+      "contentType": ContentType {
+        "__meta__": Object {
+          "createdAt": "2018-02-18T14:04:13.481Z",
+          "id": "1xYw5JsIecuGE68mmGMg20",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "ContentType",
+          "updatedAt": "2018-02-18T14:04:13.481Z",
+        },
+        "description": null,
+        "displayField": "title",
+        "fields": Array [
+          Object {
+            "disabled": false,
+            "id": "title",
+            "localized": false,
+            "name": "Title",
+            "omitted": false,
+            "required": true,
+            "type": "Symbol",
+          },
+          Object {
+            "disabled": false,
+            "id": "photo",
+            "linkType": "Asset",
+            "localized": false,
+            "name": "Photo",
+            "omitted": false,
+            "required": false,
+            "type": "Link",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCaption",
+            "localized": false,
+            "name": "Image caption",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCredits",
+            "localized": false,
+            "name": "Image credits",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+        ],
+        "name": "Image",
+      },
+      "createdAt": "2018-02-18T14:04:18.151Z",
+      "id": "5dT4Tgc7gQCuyGSGiakqYC",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Entry",
+      "updatedAt": "2018-02-18T14:04:18.151Z",
+    },
+    "imageCaption": "From the personal archive",
+    "imageCredits": "Morgan Sessions // http://www.morgansessions.com/",
+    "photo": Asset {
+      "__meta__": Object {
+        "createdAt": "2018-02-18T14:04:20.140Z",
+        "id": "6y0psij2o02YIwGScEo4kS",
+        "revision": 1,
+        "space": Object {
+          "sys": Object {
+            "id": "2fcnblq1yq14",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Asset",
+        "updatedAt": "2018-02-18T14:04:20.140Z",
+      },
+      "file": Object {
+        "contentType": "image/jpeg",
+        "details": Object {
+          "image": Object {
+            "height": 1673,
+            "width": 2509,
+          },
+          "size": 465358,
+        },
+        "fileName": "photo-1421986527537-888d998adb74.jpeg",
+        "url": "//images.contentful.com/2fcnblq1yq14/6y0psij2o02YIwGScEo4kS/bf8e90962701acda5f785ee00663cefd/photo-1421986527537-888d998adb74.jpeg",
+      },
+      "title": "Celebration",
+    },
+    "title": "It's a Celebration",
+  },
+  Entry {
+    "__meta__": Object {
+      "contentType": ContentType {
+        "__meta__": Object {
+          "createdAt": "2018-02-18T14:04:13.481Z",
+          "id": "1xYw5JsIecuGE68mmGMg20",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "ContentType",
+          "updatedAt": "2018-02-18T14:04:13.481Z",
+        },
+        "description": null,
+        "displayField": "title",
+        "fields": Array [
+          Object {
+            "disabled": false,
+            "id": "title",
+            "localized": false,
+            "name": "Title",
+            "omitted": false,
+            "required": true,
+            "type": "Symbol",
+          },
+          Object {
+            "disabled": false,
+            "id": "photo",
+            "linkType": "Asset",
+            "localized": false,
+            "name": "Photo",
+            "omitted": false,
+            "required": false,
+            "type": "Link",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCaption",
+            "localized": false,
+            "name": "Image caption",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+          Object {
+            "disabled": false,
+            "id": "imageCredits",
+            "localized": false,
+            "name": "Image credits",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+        ],
+        "name": "Image",
+      },
+      "createdAt": "2018-02-18T14:04:18.130Z",
+      "id": "3rzf72XFm8aQU4oMOci8WY",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Entry",
+      "updatedAt": "2018-02-18T14:04:18.130Z",
+    },
+    "imageCaption": "Taken at Woods Hole",
+    "imageCredits": "Dogancan Ozturan // http://dogancan.org/",
+    "photo": Asset {
+      "__meta__": Object {
+        "createdAt": "2018-02-18T14:04:20.110Z",
+        "id": "5DGRkcoj9mAgwkgGyKMuwe",
+        "revision": 1,
+        "space": Object {
+          "sys": Object {
+            "id": "2fcnblq1yq14",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Asset",
+        "updatedAt": "2018-02-18T14:04:20.110Z",
+      },
+      "file": Object {
+        "contentType": "image/jpeg",
+        "details": Object {
+          "image": Object {
+            "height": 2720,
+            "width": 4080,
+          },
+          "size": 2076159,
+        },
+        "fileName": "EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg",
+        "url": "//images.contentful.com/2fcnblq1yq14/5DGRkcoj9mAgwkgGyKMuwe/bf8e90962701acda5f785ee00663cefd/EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg",
+      },
+      "title": "Pie in the sky",
+    },
+    "title": "Pie in the Sky",
+  },
+  Entry {
+    "__meta__": Object {
+      "contentType": ContentType {
+        "__meta__": Object {
+          "createdAt": "2018-02-18T14:04:14.153Z",
+          "id": "7leLzv8hW06amGmke86y8G",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "ContentType",
+          "updatedAt": "2018-02-18T14:04:14.153Z",
+        },
+        "description": null,
+        "displayField": "title",
+        "fields": Array [
+          Object {
+            "disabled": false,
+            "id": "title",
+            "localized": false,
+            "name": "Title",
+            "omitted": false,
+            "required": true,
+            "type": "Text",
+          },
+          Object {
+            "disabled": false,
+            "id": "slug",
+            "localized": false,
+            "name": "Slug",
+            "omitted": false,
+            "required": false,
+            "type": "Symbol",
+          },
+          Object {
+            "disabled": false,
+            "id": "author",
+            "linkType": "Entry",
+            "localized": false,
+            "name": "Author",
+            "omitted": false,
+            "required": true,
+            "type": "Link",
+          },
+          Object {
+            "disabled": false,
+            "id": "coverImage",
+            "linkType": "Asset",
+            "localized": false,
+            "name": "Cover Image",
+            "omitted": false,
+            "required": false,
+            "type": "Link",
+          },
+          Object {
+            "disabled": false,
+            "id": "description",
+            "localized": false,
+            "name": "Description",
+            "omitted": false,
+            "required": false,
+            "type": "Text",
+          },
+          Object {
+            "disabled": false,
+            "id": "images",
+            "items": Object {
+              "linkType": "Entry",
+              "type": "Link",
+              "validations": Array [
+                Object {
+                  "linkContentType": Array [
+                    "1xYw5JsIecuGE68mmGMg20",
+                  ],
+                },
+              ],
+            },
+            "localized": false,
+            "name": "Images",
+            "omitted": false,
+            "required": false,
+            "type": "Array",
+          },
+          Object {
+            "disabled": false,
+            "id": "tags",
+            "items": Object {
+              "type": "Symbol",
+              "validations": Array [],
+            },
+            "localized": false,
+            "name": "Tags",
+            "omitted": false,
+            "required": false,
+            "type": "Array",
+          },
+          Object {
+            "disabled": false,
+            "id": "date",
+            "localized": false,
+            "name": "Date",
+            "omitted": false,
+            "required": false,
+            "type": "Date",
+          },
+          Object {
+            "disabled": true,
+            "id": "location",
+            "localized": false,
+            "name": "Location",
+            "omitted": false,
+            "required": false,
+            "type": "Location",
+          },
+        ],
+        "name": "Photo Gallery",
+      },
+      "createdAt": "2018-02-18T14:04:18.114Z",
+      "id": "54O5P32wmcY0wiAY0ewA2e",
+      "revision": 1,
+      "space": Object {
+        "sys": Object {
+          "id": "2fcnblq1yq14",
+          "linkType": "Space",
+          "type": "Link",
+        },
+      },
+      "type": "Entry",
+      "updatedAt": "2018-02-18T14:04:18.114Z",
+    },
+    "author": Entry {
+      "__meta__": Object {
+        "contentType": ContentType {
+          "__meta__": Object {
+            "createdAt": "2018-02-18T14:04:13.629Z",
+            "id": "38nK0gXXIccQ2IEosyAg6C",
+            "revision": 1,
+            "space": Object {
+              "sys": Object {
+                "id": "2fcnblq1yq14",
+                "linkType": "Space",
+                "type": "Link",
+              },
+            },
+            "type": "ContentType",
+            "updatedAt": "2018-02-18T14:04:13.629Z",
+          },
+          "description": null,
+          "displayField": "name",
+          "fields": Array [
+            Object {
+              "disabled": false,
+              "id": "name",
+              "localized": false,
+              "name": "Name",
+              "omitted": false,
+              "required": false,
+              "type": "Symbol",
+            },
+            Object {
+              "disabled": false,
+              "id": "twitterHandle",
+              "localized": false,
+              "name": "Twitter handle",
+              "omitted": false,
+              "required": false,
+              "type": "Symbol",
+            },
+            Object {
+              "disabled": false,
+              "id": "profilePhoto",
+              "linkType": "Asset",
+              "localized": false,
+              "name": "Profile photo",
+              "omitted": false,
+              "required": false,
+              "type": "Link",
+            },
+            Object {
+              "disabled": false,
+              "id": "biography",
+              "localized": false,
+              "name": "Biography",
+              "omitted": false,
+              "required": false,
+              "type": "Text",
+            },
+            Object {
+              "disabled": false,
+              "id": "createdEntries",
+              "items": Object {
+                "linkType": "Entry",
+                "type": "Link",
+                "validations": Array [
+                  Object {
+                    "linkContentType": Array [
+                      "1xYw5JsIecuGE68mmGMg20",
+                    ],
+                  },
+                ],
+              },
+              "localized": false,
+              "name": "Created entries",
+              "omitted": false,
+              "required": false,
+              "type": "Array",
+            },
+          ],
+          "name": "Author",
+        },
+        "createdAt": "2018-02-18T14:04:19.089Z",
+        "id": "4DyrC6MPp6Ws8UmQEQIGUc",
+        "revision": 1,
+        "space": Object {
+          "sys": Object {
+            "id": "2fcnblq1yq14",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Entry",
+        "updatedAt": "2018-02-18T14:04:19.089Z",
+      },
+      "biography": "Janine is our communications manager. Coming from the South of Germany via London, she enjoys the newest electronica, Japanese candy and literary discussions about the choices of tragic heroes.",
+      "createdEntries": null,
+      "name": "Janine McKay",
+      "profilePhoto": Asset {
+        "__meta__": Object {
+          "createdAt": "2018-02-18T14:04:20.132Z",
+          "id": "149UafeyfcGSoOmESmmYSA",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "Asset",
+          "updatedAt": "2018-02-18T14:04:20.132Z",
+        },
+        "description": "Profile pic",
+        "file": Object {
+          "contentType": "image/png",
+          "details": Object {
+            "image": Object {
+              "height": 128,
+              "width": 128,
+            },
+            "size": 12940,
+          },
+          "fileName": "FI01.png",
+          "url": "//images.contentful.com/2fcnblq1yq14/149UafeyfcGSoOmESmmYSA/bf8e90962701acda5f785ee00663cefd/FI01.png",
+        },
+        "title": "Janine",
+      },
+      "twitterHandle": "@contentful",
+    },
+    "coverImage": Asset {
+      "__meta__": Object {
+        "createdAt": "2018-02-18T14:04:20.140Z",
+        "id": "6y0psij2o02YIwGScEo4kS",
+        "revision": 1,
+        "space": Object {
+          "sys": Object {
+            "id": "2fcnblq1yq14",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Asset",
+        "updatedAt": "2018-02-18T14:04:20.140Z",
+      },
+      "file": Object {
+        "contentType": "image/jpeg",
+        "details": Object {
+          "image": Object {
+            "height": 1673,
+            "width": 2509,
+          },
+          "size": 465358,
+        },
+        "fileName": "photo-1421986527537-888d998adb74.jpeg",
+        "url": "//images.contentful.com/2fcnblq1yq14/6y0psij2o02YIwGScEo4kS/bf8e90962701acda5f785ee00663cefd/photo-1421986527537-888d998adb74.jpeg",
+      },
+      "title": "Celebration",
+    },
+    "date": "2015-01-30",
+    "description": "All the images in the gallery taken from “[Unsplash](https://unsplash.com/)” photo project.",
+    "images": Array [
+      Entry {
+        "__meta__": Object {
+          "contentType": ContentType {
+            "__meta__": Object {
+              "createdAt": "2018-02-18T14:04:13.481Z",
+              "id": "1xYw5JsIecuGE68mmGMg20",
+              "revision": 1,
+              "space": Object {
+                "sys": Object {
+                  "id": "2fcnblq1yq14",
+                  "linkType": "Space",
+                  "type": "Link",
+                },
+              },
+              "type": "ContentType",
+              "updatedAt": "2018-02-18T14:04:13.481Z",
+            },
+            "description": null,
+            "displayField": "title",
+            "fields": Array [
+              Object {
+                "disabled": false,
+                "id": "title",
+                "localized": false,
+                "name": "Title",
+                "omitted": false,
+                "required": true,
+                "type": "Symbol",
+              },
+              Object {
+                "disabled": false,
+                "id": "photo",
+                "linkType": "Asset",
+                "localized": false,
+                "name": "Photo",
+                "omitted": false,
+                "required": false,
+                "type": "Link",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCaption",
+                "localized": false,
+                "name": "Image caption",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCredits",
+                "localized": false,
+                "name": "Image credits",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+            ],
+            "name": "Image",
+          },
+          "createdAt": "2018-02-18T14:04:18.151Z",
+          "id": "5dT4Tgc7gQCuyGSGiakqYC",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "Entry",
+          "updatedAt": "2018-02-18T14:04:18.151Z",
+        },
+        "imageCaption": "From the personal archive",
+        "imageCredits": "Morgan Sessions // http://www.morgansessions.com/",
+        "photo": Asset {
+          "__meta__": Object {
+            "createdAt": "2018-02-18T14:04:20.140Z",
+            "id": "6y0psij2o02YIwGScEo4kS",
+            "revision": 1,
+            "space": Object {
+              "sys": Object {
+                "id": "2fcnblq1yq14",
+                "linkType": "Space",
+                "type": "Link",
+              },
+            },
+            "type": "Asset",
+            "updatedAt": "2018-02-18T14:04:20.140Z",
+          },
+          "file": Object {
+            "contentType": "image/jpeg",
+            "details": Object {
+              "image": Object {
+                "height": 1673,
+                "width": 2509,
+              },
+              "size": 465358,
+            },
+            "fileName": "photo-1421986527537-888d998adb74.jpeg",
+            "url": "//images.contentful.com/2fcnblq1yq14/6y0psij2o02YIwGScEo4kS/bf8e90962701acda5f785ee00663cefd/photo-1421986527537-888d998adb74.jpeg",
+          },
+          "title": "Celebration",
+        },
+        "title": "It's a Celebration",
+      },
+      Entry {
+        "__meta__": Object {
+          "contentType": ContentType {
+            "__meta__": Object {
+              "createdAt": "2018-02-18T14:04:13.481Z",
+              "id": "1xYw5JsIecuGE68mmGMg20",
+              "revision": 1,
+              "space": Object {
+                "sys": Object {
+                  "id": "2fcnblq1yq14",
+                  "linkType": "Space",
+                  "type": "Link",
+                },
+              },
+              "type": "ContentType",
+              "updatedAt": "2018-02-18T14:04:13.481Z",
+            },
+            "description": null,
+            "displayField": "title",
+            "fields": Array [
+              Object {
+                "disabled": false,
+                "id": "title",
+                "localized": false,
+                "name": "Title",
+                "omitted": false,
+                "required": true,
+                "type": "Symbol",
+              },
+              Object {
+                "disabled": false,
+                "id": "photo",
+                "linkType": "Asset",
+                "localized": false,
+                "name": "Photo",
+                "omitted": false,
+                "required": false,
+                "type": "Link",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCaption",
+                "localized": false,
+                "name": "Image caption",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCredits",
+                "localized": false,
+                "name": "Image credits",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+            ],
+            "name": "Image",
+          },
+          "createdAt": "2018-02-18T14:04:18.646Z",
+          "id": "67rvVwLG3mMsucCsaKgaMi",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "Entry",
+          "updatedAt": "2018-02-18T14:04:18.646Z",
+        },
+        "imageCaption": "From the personal archive",
+        "imageCredits": "Jay Wennington // http://jaywennington.tumblr.com/",
+        "photo": Asset {
+          "__meta__": Object {
+            "createdAt": "2018-02-18T14:04:20.151Z",
+            "id": "3nCIlsuVKwQysuMcKGuUA4",
+            "revision": 1,
+            "space": Object {
+              "sys": Object {
+                "id": "2fcnblq1yq14",
+                "linkType": "Space",
+                "type": "Link",
+              },
+            },
+            "type": "Asset",
+            "updatedAt": "2018-02-18T14:04:20.151Z",
+          },
+          "file": Object {
+            "contentType": "image/jpeg",
+            "details": Object {
+              "image": Object {
+                "height": 3264,
+                "width": 4896,
+              },
+              "size": 1871426,
+            },
+            "fileName": "tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg",
+            "url": "//images.contentful.com/2fcnblq1yq14/3nCIlsuVKwQysuMcKGuUA4/bf8e90962701acda5f785ee00663cefd/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg",
+          },
+          "title": "The world on a digital screen",
+        },
+        "title": "The world on a digital screen",
+      },
+      Entry {
+        "__meta__": Object {
+          "contentType": ContentType {
+            "__meta__": Object {
+              "createdAt": "2018-02-18T14:04:13.481Z",
+              "id": "1xYw5JsIecuGE68mmGMg20",
+              "revision": 1,
+              "space": Object {
+                "sys": Object {
+                  "id": "2fcnblq1yq14",
+                  "linkType": "Space",
+                  "type": "Link",
+                },
+              },
+              "type": "ContentType",
+              "updatedAt": "2018-02-18T14:04:13.481Z",
+            },
+            "description": null,
+            "displayField": "title",
+            "fields": Array [
+              Object {
+                "disabled": false,
+                "id": "title",
+                "localized": false,
+                "name": "Title",
+                "omitted": false,
+                "required": true,
+                "type": "Symbol",
+              },
+              Object {
+                "disabled": false,
+                "id": "photo",
+                "linkType": "Asset",
+                "localized": false,
+                "name": "Photo",
+                "omitted": false,
+                "required": false,
+                "type": "Link",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCaption",
+                "localized": false,
+                "name": "Image caption",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCredits",
+                "localized": false,
+                "name": "Image credits",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+            ],
+            "name": "Image",
+          },
+          "createdAt": "2018-02-18T14:04:19.350Z",
+          "id": "2MtVnLk3wIiAgOC6OG6qS4",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "Entry",
+          "updatedAt": "2018-02-18T14:04:19.350Z",
+        },
+        "imageCaption": "The bridge, as seen on a cloudy day",
+        "imageCredits": "Chris Brignola // http://www.avelamedia.com/",
+        "photo": Asset {
+          "__meta__": Object {
+            "createdAt": "2018-02-18T14:04:21.098Z",
+            "id": "2czUZ3VWIc68cyOoyGY4MW",
+            "revision": 1,
+            "space": Object {
+              "sys": Object {
+                "id": "2fcnblq1yq14",
+                "linkType": "Space",
+                "type": "Link",
+              },
+            },
+            "type": "Asset",
+            "updatedAt": "2018-02-18T14:04:21.098Z",
+          },
+          "file": Object {
+            "contentType": "image/jpeg",
+            "details": Object {
+              "image": Object {
+                "height": 3720,
+                "width": 5580,
+              },
+              "size": 9508880,
+            },
+            "fileName": "lUUnN7VGSoWZ3noefeH7_Baker Beach-12.jpg",
+            "url": "//images.contentful.com/2fcnblq1yq14/2czUZ3VWIc68cyOoyGY4MW/bf8e90962701acda5f785ee00663cefd/lUUnN7VGSoWZ3noefeH7_Baker_Beach-12.jpg",
+          },
+          "title": "Golden Gate Bridge",
+        },
+        "title": "The Golden Gate Bridge",
+      },
+      Entry {
+        "__meta__": Object {
+          "contentType": ContentType {
+            "__meta__": Object {
+              "createdAt": "2018-02-18T14:04:13.481Z",
+              "id": "1xYw5JsIecuGE68mmGMg20",
+              "revision": 1,
+              "space": Object {
+                "sys": Object {
+                  "id": "2fcnblq1yq14",
+                  "linkType": "Space",
+                  "type": "Link",
+                },
+              },
+              "type": "ContentType",
+              "updatedAt": "2018-02-18T14:04:13.481Z",
+            },
+            "description": null,
+            "displayField": "title",
+            "fields": Array [
+              Object {
+                "disabled": false,
+                "id": "title",
+                "localized": false,
+                "name": "Title",
+                "omitted": false,
+                "required": true,
+                "type": "Symbol",
+              },
+              Object {
+                "disabled": false,
+                "id": "photo",
+                "linkType": "Asset",
+                "localized": false,
+                "name": "Photo",
+                "omitted": false,
+                "required": false,
+                "type": "Link",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCaption",
+                "localized": false,
+                "name": "Image caption",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCredits",
+                "localized": false,
+                "name": "Image credits",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+            ],
+            "name": "Image",
+          },
+          "createdAt": "2018-02-18T14:04:18.130Z",
+          "id": "3rzf72XFm8aQU4oMOci8WY",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "Entry",
+          "updatedAt": "2018-02-18T14:04:18.130Z",
+        },
+        "imageCaption": "Taken at Woods Hole",
+        "imageCredits": "Dogancan Ozturan // http://dogancan.org/",
+        "photo": Asset {
+          "__meta__": Object {
+            "createdAt": "2018-02-18T14:04:20.110Z",
+            "id": "5DGRkcoj9mAgwkgGyKMuwe",
+            "revision": 1,
+            "space": Object {
+              "sys": Object {
+                "id": "2fcnblq1yq14",
+                "linkType": "Space",
+                "type": "Link",
+              },
+            },
+            "type": "Asset",
+            "updatedAt": "2018-02-18T14:04:20.110Z",
+          },
+          "file": Object {
+            "contentType": "image/jpeg",
+            "details": Object {
+              "image": Object {
+                "height": 2720,
+                "width": 4080,
+              },
+              "size": 2076159,
+            },
+            "fileName": "EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg",
+            "url": "//images.contentful.com/2fcnblq1yq14/5DGRkcoj9mAgwkgGyKMuwe/bf8e90962701acda5f785ee00663cefd/EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg",
+          },
+          "title": "Pie in the sky",
+        },
+        "title": "Pie in the Sky",
+      },
+      Entry {
+        "__meta__": Object {
+          "contentType": ContentType {
+            "__meta__": Object {
+              "createdAt": "2018-02-18T14:04:13.481Z",
+              "id": "1xYw5JsIecuGE68mmGMg20",
+              "revision": 1,
+              "space": Object {
+                "sys": Object {
+                  "id": "2fcnblq1yq14",
+                  "linkType": "Space",
+                  "type": "Link",
+                },
+              },
+              "type": "ContentType",
+              "updatedAt": "2018-02-18T14:04:13.481Z",
+            },
+            "description": null,
+            "displayField": "title",
+            "fields": Array [
+              Object {
+                "disabled": false,
+                "id": "title",
+                "localized": false,
+                "name": "Title",
+                "omitted": false,
+                "required": true,
+                "type": "Symbol",
+              },
+              Object {
+                "disabled": false,
+                "id": "photo",
+                "linkType": "Asset",
+                "localized": false,
+                "name": "Photo",
+                "omitted": false,
+                "required": false,
+                "type": "Link",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCaption",
+                "localized": false,
+                "name": "Image caption",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCredits",
+                "localized": false,
+                "name": "Image credits",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+            ],
+            "name": "Image",
+          },
+          "createdAt": "2018-02-18T14:04:19.127Z",
+          "id": "4MA2xHUeLeKaAs2K4Kqiog",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "Entry",
+          "updatedAt": "2018-02-18T14:04:19.127Z",
+        },
+        "imageCaption": "Taken in San Sebastian",
+        "imageCredits": "Oscar Nillson // http://oscr.se/",
+        "photo": Asset {
+          "__meta__": Object {
+            "createdAt": "2018-02-18T14:04:20.337Z",
+            "id": "geptFDHuzQa8oA2Ywmiew",
+            "revision": 1,
+            "space": Object {
+              "sys": Object {
+                "id": "2fcnblq1yq14",
+                "linkType": "Space",
+                "type": "Link",
+              },
+            },
+            "type": "Asset",
+            "updatedAt": "2018-02-18T14:04:20.337Z",
+          },
+          "file": Object {
+            "contentType": "image/jpeg",
+            "details": Object {
+              "image": Object {
+                "height": 3264,
+                "width": 4912,
+              },
+              "size": 8254379,
+            },
+            "fileName": "3CoEETpvQYO8x60lnZSA_rue.jpg",
+            "url": "//images.contentful.com/2fcnblq1yq14/geptFDHuzQa8oA2Ywmiew/bf8e90962701acda5f785ee00663cefd/3CoEETpvQYO8x60lnZSA_rue.jpg",
+          },
+          "title": "City Street",
+        },
+        "title": "City Street",
+      },
+      Entry {
+        "__meta__": Object {
+          "contentType": ContentType {
+            "__meta__": Object {
+              "createdAt": "2018-02-18T14:04:13.481Z",
+              "id": "1xYw5JsIecuGE68mmGMg20",
+              "revision": 1,
+              "space": Object {
+                "sys": Object {
+                  "id": "2fcnblq1yq14",
+                  "linkType": "Space",
+                  "type": "Link",
+                },
+              },
+              "type": "ContentType",
+              "updatedAt": "2018-02-18T14:04:13.481Z",
+            },
+            "description": null,
+            "displayField": "title",
+            "fields": Array [
+              Object {
+                "disabled": false,
+                "id": "title",
+                "localized": false,
+                "name": "Title",
+                "omitted": false,
+                "required": true,
+                "type": "Symbol",
+              },
+              Object {
+                "disabled": false,
+                "id": "photo",
+                "linkType": "Asset",
+                "localized": false,
+                "name": "Photo",
+                "omitted": false,
+                "required": false,
+                "type": "Link",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCaption",
+                "localized": false,
+                "name": "Image caption",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCredits",
+                "localized": false,
+                "name": "Image credits",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+            ],
+            "name": "Image",
+          },
+          "createdAt": "2018-02-18T14:04:19.282Z",
+          "id": "3eL4DUKKdyqGIQm2M6SaCe",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "Entry",
+          "updatedAt": "2018-02-18T14:04:19.282Z",
+        },
+        "imageCaption": "Right in your backyard",
+        "imageCredits": "John French // http://johnmfrench.tumblr.com/",
+        "photo": Asset {
+          "__meta__": Object {
+            "createdAt": "2018-02-18T14:04:20.883Z",
+            "id": "26PCF5jzziyeiessOOY0o0",
+            "revision": 1,
+            "space": Object {
+              "sys": Object {
+                "id": "2fcnblq1yq14",
+                "linkType": "Space",
+                "type": "Link",
+              },
+            },
+            "type": "Asset",
+            "updatedAt": "2018-02-18T14:04:20.883Z",
+          },
+          "file": Object {
+            "contentType": "image/jpeg",
+            "details": Object {
+              "image": Object {
+                "height": 3456,
+                "width": 5184,
+              },
+              "size": 8797338,
+            },
+            "fileName": "2MwGKhLETRSQoHP9UWE4_IMG_1348-3.jpg",
+            "url": "//images.contentful.com/2fcnblq1yq14/26PCF5jzziyeiessOOY0o0/bf8e90962701acda5f785ee00663cefd/2MwGKhLETRSQoHP9UWE4_IMG_1348-3.jpg",
+          },
+          "title": "The Flower",
+        },
+        "title": "The Flower",
+      },
+      Entry {
+        "__meta__": Object {
+          "contentType": ContentType {
+            "__meta__": Object {
+              "createdAt": "2018-02-18T14:04:13.481Z",
+              "id": "1xYw5JsIecuGE68mmGMg20",
+              "revision": 1,
+              "space": Object {
+                "sys": Object {
+                  "id": "2fcnblq1yq14",
+                  "linkType": "Space",
+                  "type": "Link",
+                },
+              },
+              "type": "ContentType",
+              "updatedAt": "2018-02-18T14:04:13.481Z",
+            },
+            "description": null,
+            "displayField": "title",
+            "fields": Array [
+              Object {
+                "disabled": false,
+                "id": "title",
+                "localized": false,
+                "name": "Title",
+                "omitted": false,
+                "required": true,
+                "type": "Symbol",
+              },
+              Object {
+                "disabled": false,
+                "id": "photo",
+                "linkType": "Asset",
+                "localized": false,
+                "name": "Photo",
+                "omitted": false,
+                "required": false,
+                "type": "Link",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCaption",
+                "localized": false,
+                "name": "Image caption",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+              Object {
+                "disabled": false,
+                "id": "imageCredits",
+                "localized": false,
+                "name": "Image credits",
+                "omitted": false,
+                "required": false,
+                "type": "Text",
+              },
+            ],
+            "name": "Image",
+          },
+          "createdAt": "2018-02-18T14:04:19.303Z",
+          "id": "2YhtjbebgscIwO2keYEa4O",
+          "revision": 1,
+          "space": Object {
+            "sys": Object {
+              "id": "2fcnblq1yq14",
+              "linkType": "Space",
+              "type": "Link",
+            },
+          },
+          "type": "Entry",
+          "updatedAt": "2018-02-18T14:04:19.303Z",
+        },
+        "imageCaption": "Up in the air",
+        "imageCredits": "Austin Ban // http://austinban.com/",
+        "photo": Asset {
+          "__meta__": Object {
+            "createdAt": "2018-02-18T14:04:20.111Z",
+            "id": "1zY02V76cUsM6yWycWqyk6",
+            "revision": 1,
+            "space": Object {
+              "sys": Object {
+                "id": "2fcnblq1yq14",
+                "linkType": "Space",
+                "type": "Link",
+              },
+            },
+            "type": "Asset",
+            "updatedAt": "2018-02-18T14:04:20.111Z",
+          },
+          "file": Object {
+            "contentType": "image/jpeg",
+            "details": Object {
+              "image": Object {
+                "height": 3456,
+                "width": 5184,
+              },
+              "size": 4328734,
+            },
+            "fileName": "bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg",
+            "url": "//images.contentful.com/2fcnblq1yq14/1zY02V76cUsM6yWycWqyk6/bf8e90962701acda5f785ee00663cefd/bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg",
+          },
+          "title": "Air Baloon",
+        },
+        "title": "Air Baloon",
+      },
+    ],
+    "location": Object {
+      "lat": 52.52000659999999,
+      "lon": 13.404953999999975,
+    },
+    "slug": "the-world-around-me-the-best-of-young-photography",
+    "tags": Array [
+      "city",
+      "lens",
+      "bridge",
+      "bar",
+      "people",
+      "perspective",
+      "macro",
+      "close up",
+      "baloon",
+    ],
+    "title": "The World Around Me: The Best of Young Photography",
+  },
+]
+`;
+
+exports[`selectors isSyncing selector 1`] = `false`;
+
+exports[`selectors lastSync selector 1`] = `
+Object {
+  "addedAssets": Array [],
+  "addedEntries": Array [],
+  "date": 2018-02-18T14:18:53.000Z,
+  "deletedAssets": Array [],
+  "deletedEntries": Array [],
+  "didSucceed": true,
+}
+`;
+
+exports[`selectors locales selector 1`] = `
+Array [
+  Object {
+    "code": "en-US",
+    "default": true,
+    "fallbackCode": null,
+    "name": "English (United States)",
+  },
+]
+`;
+
+exports[`selectors space selector 1`] = `
+Object {
+  "locales": Array [
+    Object {
+      "code": "en-US",
+      "default": true,
+      "fallbackCode": null,
+      "name": "English (United States)",
+    },
+  ],
+  "name": "Example",
+  "sys": Object {
+    "id": "2fcnblq1yq14",
+    "type": "Space",
+  },
+}
+`;
