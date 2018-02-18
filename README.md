@@ -79,7 +79,7 @@ dispatch(actions.sync());
 | `accessToken`    | yes       | -       | Your contentful CDA access token |
 | `clientParams`   | no        | `{}`    | Additional arguments to be passed to [`createClient`](https://contentful.github.io/contentful.js/contentful/5.1.1/contentful.html#.createClient) |
 | `createClient`   | yes       | -       | The desired variant of the contentful.js client factory method |
-| `localeSelector` | no        | `null`  | A selector returning the locale to be used, e.g.<br>`(state) => state.currentLocale`|
+| `localeSelector` | no        | `() => null`  | A selector returning the locale to be used, e.g.<br>`(state) => state.currentLocale`|
 | `space`          | yes       | -       | The id of the contentful space to by synced |
 | `stateSelector`  | yes       | -       | A selector returning the portion of the state which is managed by the contentful-redux reducer, e.g.<br>`(state) => state.contentful` |
 
