@@ -69,3 +69,39 @@ export const myModelEntities = createSelector(
 import { actions } from './contentful';
 dispatch(actions.sync());
 ```
+
+## API Documentation
+
+### `contentfulRedux(options)`
+
+| Option           | Required  | Default | Description |
+| ---------------- | --------- | ------- | ----------- |
+| `accessToken`    | yes       | -       | Your contentful CDA access token |
+| `clientParams`   | no        | `{}`    | Additional arguments to be passed to [`createClient`](https://contentful.github.io/contentful.js/contentful/5.1.1/contentful.html#.createClient) |
+| `createClient`   | yes       | -       | The desired variant of the contentful.js client factory method |
+| `localeSelector` | no        | `null`  | A selector returning the locale to be used, e.g.<br>`(state) => state.currentLocale`|
+| `space`          | yes       | -       | The id of the contentful space to by synced |
+| `stateSelector`  | yes       | -       | A selector returning the portion of the state which is managed by the contentful-redux reducer, e.g.<br>`(state) => state.contentful` |
+
+### Action creators
+The following redux action creators are provided by `contentful-redux`:
+
+#### `sync([spaceId])`
+
+| Argument  | Required  | Default         | Description |
+| ----------| --------- | --------------  | ----------- |
+| `spaceId` | no        | `options.space` | The id of the space to be synced. There **must** be a middleware installed wich is registered with the same space id |
+
+### Selectors
+The following reselect selectors are provided by `contentful-redux`:
+
+| Selector        | Returns      | Description |
+| --------------- | ------------ | ----------- |
+| `assets`        | `array`      | a list of all known assets in the contentful space |
+| `contentTypes`  | `object`     | a map from content type ids to the meta information about the corresponding content type |
+| `defaultLocale` | `object`     | the locale which is defined as default of the contentful space |
+| `entries`       | `array`      | a list of all known entries in the contentful space |
+| `isSyncing`     | `boolean`    | `true` while a sync operation is in progress |
+| `lastSync`      | `object`     | meta-information about the results of the last sync attempt |
+| `locales`       | `array`      | the locales which are defined for the contentful space |
+| `space`         | `object`     | meta-information about your contentful space |
