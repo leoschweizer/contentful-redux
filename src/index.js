@@ -3,12 +3,7 @@ const { makeSelectors } = require('./selectors');
 const { makeMiddleware } = require('./middleware');
 const { reducer } = require('./reducer');
 
-const defaultOptions = {
-	localeSelector: () => null
-};
-
-module.exports = (userOptions = {}) => {
-	const options = { ...defaultOptions, ...userOptions };
+module.exports = (options = {}) => {
 	return {
 		actions: makeActions(options),
 		middleware: makeMiddleware(options),

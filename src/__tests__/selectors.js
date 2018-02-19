@@ -1,3 +1,4 @@
+const { createSelector } = require('reselect');
 const { makeSelectors } = require('../selectors');
 const { initialState } = require('../reducer.js');
 const stateAfterSync = require('./__fixtures__/stateAfterSync');
@@ -5,8 +6,7 @@ const stateAfterSync = require('./__fixtures__/stateAfterSync');
 describe('selectors', () => {
 
 	const selectors = makeSelectors({
-		stateSelector: state => state,
-		localeSelector: () => null
+		stateSelector: state => state
 	});
 
 	const selectorsWithCustomLocale = makeSelectors({
@@ -55,6 +55,14 @@ describe('selectors', () => {
 	test('space selector', () => {
 		expect(selectors.space(initialState)).toEqual({});
 		expect(selectors.space(stateAfterSync)).toMatchSnapshot();
+	});
+
+	test('custom entries selector', () => {
+		const selector = createSelector(
+			selectors.entries, selectors.contentTypes,
+			(entries, types) => entries.filter(each => each.__contentType__ === types['1xYw5JsIecuGE68mmGMg20'])
+		);
+		expect(selector(stateAfterSync)).toHaveLength(7);
 	});
 
 });
