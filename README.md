@@ -97,11 +97,11 @@ The following reselect selectors are provided by `contentful-redux`:
 
 | Selector        | Returns      | Description |
 | --------------- | ------------ | ----------- |
-| `assets`        | `array`      | a list of all known assets in the contentful space |
-| `contentTypes`  | `object`     | a map from content type ids to the meta information about the corresponding content type |
-| `defaultLocale` | `object`     | the locale which is defined as default of the contentful space |
-| `entries`       | `array`      | a list of all known entries in the contentful space |
+| `assets`        | `array`      | A list of all known assets in the contentful space |
+| `contentTypes`  | `object`     | A map from content type ids to the meta information about the corresponding content type |
+| `defaultLocale` | `object`     | The locale which is defined as default of the contentful space |
+| `entries`       | `array`      | A list of all known entries in the contentful space |
 | `isSyncing`     | `boolean`    | `true` while a sync operation is in progress |
-| `lastSync`      | `object`     | meta-information about the results of the last sync attempt |
-| `locales`       | `array`      | the locales which are defined for the contentful space |
-| `space`         | `object`     | meta-information about your contentful space |
+| `lastSync`      | `object`     | Meta-information about the results of the last sync attempt |
+| `locales`       | `array`      | The locales which are defined for the contentful space |
+| `space`         | `object`     | Meta-information about your contentful space |
