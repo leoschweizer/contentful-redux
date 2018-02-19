@@ -62,7 +62,7 @@ describe('selectors', () => {
 			selectors.entries, selectors.contentTypes,
 			(entries, types) => entries.filter(each => each.__contentType__ === types['1xYw5JsIecuGE68mmGMg20'])
 		);
-		expect(selector(stateAfterSync)).toMatchSnapshot();
+		expect(selector(stateAfterSync)).toHaveLength(7);
 	});
 
 });
