@@ -11,7 +11,7 @@ const mapifyModels = modelArray => {
 	}, {});
 };
 
-const makeSelectors = ({ stateSelector, localeSelector }) => {
+const makeSelectors = ({ stateSelector, localeSelector = () => null }) => {
 
 	const space = createSelector(
 		stateSelector,

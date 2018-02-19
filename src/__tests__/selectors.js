@@ -6,8 +6,7 @@ const stateAfterSync = require('./__fixtures__/stateAfterSync');
 describe('selectors', () => {
 
 	const selectors = makeSelectors({
-		stateSelector: state => state,
-		localeSelector: () => null
+		stateSelector: state => state
 	});
 
 	const selectorsWithCustomLocale = makeSelectors({
