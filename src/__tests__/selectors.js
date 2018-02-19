@@ -1,5 +1,6 @@
 const { makeSelectors } = require('../selectors');
 const { initialState } = require('../reducer.js');
+const { createSelector } = require('reselect');
 const stateAfterSync = require('./__fixtures__/stateAfterSync');
 
 describe('selectors', () => {
@@ -55,6 +56,14 @@ describe('selectors', () => {
 	test('space selector', () => {
 		expect(selectors.space(initialState)).toEqual({});
 		expect(selectors.space(stateAfterSync)).toMatchSnapshot();
+	});
+
+	test('custom entries selector', () => {
+		const selector = createSelector(
+			selectors.entries, selectors.contentTypes,
+			(entries, types) => entries.filter(each => each.__contentType__ === types['1xYw5JsIecuGE68mmGMg20'])
+		);
+		expect(selector(stateAfterSync)).toMatchSnapshot();
 	});
 
 });
