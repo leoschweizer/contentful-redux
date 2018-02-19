@@ -1,6 +1,6 @@
+const { createSelector } = require('reselect');
 const { makeSelectors } = require('../selectors');
 const { initialState } = require('../reducer.js');
-const { createSelector } = require('reselect');
 const stateAfterSync = require('./__fixtures__/stateAfterSync');
 
 describe('selectors', () => {
