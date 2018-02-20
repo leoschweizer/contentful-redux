@@ -5,14 +5,16 @@
 [![npm](https://img.shields.io/npm/v/contentful-redux.svg)](https://www.npmjs.com/package/contentful-redux)
 [![Greenkeeper badge](https://badges.greenkeeper.io/leoschweizer/contentful-redux.svg)](https://greenkeeper.io/)
 
-This library provides an implementation of the [Contentful sync API](https://github.com/contentful/contentful.js/) for [redux](https://redux.js.org/) and [reselect](https://github.com/reactjs/reselect). If you are not already familiar with redux (and reselect), you should head over to those projects first before trying to integrate contentful-redux into your project.
+This library provides an implementation of the [Contentful sync API](https://github.com/contentful/contentful.js/) for [redux](https://redux.js.org/) and [reselect](https://github.com/reactjs/reselect). `contentful-redux` handles the complete synchronization workflow (including cyclic link resolution, localization, and incremental syncing) and lets you consume your contents from Contentful as easy-to-use selectors. 
+
+If you are not already familiar with redux (and reselect), you should familiarize yourself with those first before trying to integrate contentful-redux into your project.
 
 ## Installation
-Using npm:
+`contentful-redux` is provided as a collection of CommonJS modules, which can be installed using npm:
 ```
 npm install --save contententful@5 contentful-redux
 ```
-Using yarn:
+or using yarn:
 ```
 yarn add contentful@5 contentful-redux
 ```
@@ -105,3 +107,11 @@ The following reselect selectors are provided by `contentful-redux`:
 | `lastSync`      | `object`     | Meta-information about the results of the last sync attempt |
 | `locales`       | `array`      | The locales which are defined for the contentful space |
 | `space`         | `object`     | Meta-information about your contentful space |
+
+## [Changelog](CHANGELOG.md)
+
+## License
+
+This software is licensed under the MIT License. [View the license](LICENSE).
+
+Copyright © 2018 [Leo Schweizer](https://github.com/leoschweizer)
