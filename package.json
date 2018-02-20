@@ -1,6 +1,6 @@
 {
   "name": "contentful-redux",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Contentful sync API implementation for redux/reselect",
   "keywords": [
     "contentful",
