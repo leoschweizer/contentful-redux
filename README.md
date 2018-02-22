@@ -12,7 +12,7 @@ If you are not already familiar with redux (and reselect), you should familiariz
 ## Installation
 `contentful-redux` is provided as a collection of CommonJS modules, which can be installed using npm:
 ```
-npm install --save contententful@5 contentful-redux
+npm install --save contentful@5 contentful-redux
 ```
 or using yarn:
 ```
