@@ -34,7 +34,7 @@
   "homepage": "https://github.com/leoschweizer/contentful-redux#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "reselect": "^3.0.1"
+    "reselect": "^4.0.0"
   },
   "peerDependencies": {
     "contentful": "5.x"
