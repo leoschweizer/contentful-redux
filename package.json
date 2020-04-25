@@ -47,7 +47,7 @@
     "eslint-plugin-jest": "23.8.2",
     "generate-changelog": "^1.7.0",
     "jest": "^22.2.2",
-    "xo": "^0.22.0"
+    "xo": "^0.30.0"
   },
   "jest": {
     "collectCoverageFrom": [
